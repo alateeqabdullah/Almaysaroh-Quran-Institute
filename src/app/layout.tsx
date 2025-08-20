@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Lateef } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -33,13 +32,12 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-bg ${lateef.variable} antialiased  `}
       >
-        <ThemeProvider>
+     
           <Navbar />
 
           {children}
           <Footer />
           <WhatsAppButton />
-        </ThemeProvider>
       </body>
     </html>
   );
