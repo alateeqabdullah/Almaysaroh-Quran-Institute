@@ -20,7 +20,7 @@ export default function EnrollButton({
       )}
       asChild
     >
-      <Link href={"/about"}>{children}</Link>
+      <Link href={"/register"}>{children}</Link>
     </Button>
   );
 }
