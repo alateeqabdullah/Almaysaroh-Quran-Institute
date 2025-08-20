@@ -45,7 +45,7 @@ export default function RegisterPage() {
 
   return (
     <main className="min-h-screen w-full bg-gray-50">
-      <section className="mx-auto max-w-5xl px-4 py-10">
+      <section className="mx-auto max-w-5xl px-4 py-50">
         <div className="mb-8 text-center">
           <h1 className="text-3xl font-semibold tracking-tight">
             {"  Almaysaroh Qur'an Institute Registration Form"}
