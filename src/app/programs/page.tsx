@@ -13,7 +13,7 @@ export default function ProgramsPage() {
         <H2 className="text-4xl md:text-6xl font-bold text-green-800 mb-6">
           Our Programs & Offerings
         </H2>
-        <Description className="text-gray-500  font-semibold max-w-2xl mx-auto text-lg md:text-xl">
+        <Description className="text-gray-700  max-w-2xl mx-auto text-lg md:text-xl">
           We offer a variety of online and physical programs to suit all
           learners. Our courses are designed to guide students from beginner to
           mastery in Qur’ān recitation and memorization.

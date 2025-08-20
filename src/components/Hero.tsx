@@ -29,7 +29,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-2xl text-gray-600 max-w-xl mx-auto md:mx-0">
-            At Al-Maysaroh Qur’an Academy, we provide expert guidance with
+            At Al-Maysaroh Qur’an Institute, we provide expert guidance with
             qualified teachers to help you master recitation, memorization, and
             understanding.
           </p>
@@ -55,7 +55,7 @@ export default function Hero() {
           className="flex justify-center md:justify-end"
         >
           <Image
-            src="/images/slide1.jpg"
+            src="/images/hero-quran.jpg"
             alt="Qur’an learning illustration"
             width={500}
             height={500}

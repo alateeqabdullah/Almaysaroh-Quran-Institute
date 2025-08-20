@@ -141,7 +141,7 @@ export default function WhyAlmaysaroh() {
         </motion.h2>
 
         <motion.p
-          className="text-gray-500 max-w-2xl mx-auto mb-12 font-semibold md:text-xl"
+          className="text-gray-700 max-w-2xl mx-auto mb-12 md:text-xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}

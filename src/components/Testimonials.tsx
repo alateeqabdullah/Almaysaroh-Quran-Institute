@@ -250,8 +250,8 @@ export default function TestimonialsCarousel() {
               onClick={() => scrollTo(idx)}
               className={`h-2.5 w-2.5 rounded-full transition ${
                 idx === selectedIndex
-                  ? "bg-green-700"
-                  : "bg-green-300 hover:bg-green-500"
+                  ? "bg-green-100"
+                  : "bg-green-700 hover:bg-green-100"
               }`}
               aria-label={`Go to slide ${idx + 1}`}
             />

@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import H2 from "./H2";
 import Description from "./Description";
+import Image from "next/image";
 
 type Teacher = {
   name: string;
@@ -14,27 +15,27 @@ type Teacher = {
 
 const teachers: Teacher[] = [
   {
-    name: "Ustadh Ahmad Yusuf",
+    name: "Ustadh Abubakar Abdurrozzaq",
     title: "Qirā’ah Instructor",
-    image: "/teachers/ahmad-yusuf.jpg",
+    image: "/teachers/abubakar.jpg",
     bio: "Certified Qur’an teacher with 15 years of experience teaching Tajweed and Qirā’ah.",
   },
   {
-    name: "Ustadhah Fatima Bello",
+    name: "Ustadhah Faatimah Alagbada",
     title: "Tahfeedh Instructor",
-    image: "/teachers/fatima-bello.jpg",
+    image: "/teachers/fatimah-alagbada.jpg",
     bio: "Expert in memorization (Tahfeedh) with personalized student guidance.",
   },
   {
-    name: "Ustadh Ibrahim Sani",
+    name: "Ustadh 'Aliyyu 'Abdurrozzaq ",
     title: "Tajweed Instructor",
-    image: "/teachers/ibrahim-sani.jpg",
+    image: "/teachers/aliyyu-abdurrozzaq.jpg",
     bio: "Specializes in Tajweed rules, ensuring accurate and fluent recitation.",
   },
   {
-    name: "Ustadhah Amina Yusuf",
+    name: "Ustadhah Robee'ah Abdurrozzaq",
     title: "Qirā’aat Instructor",
-    image: "/teachers/amina-yusuf.jpg",
+    image: "/teachers/abubakar.jpg",
     bio: "Experienced in teaching multiple Qirā’aat, focusing on pronunciation and rhythm.",
   },
 ];
@@ -64,18 +65,18 @@ export default function Teachers() {
               <Card className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all">
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="w-32 h-32 mb-4 relative rounded-full overflow-hidden border-4 border-green-200">
-                    {/* <Image
+                    <Image
                       src={teacher.image}
                       alt={teacher.name}
                       fill
                       className="object-cover"
-                    /> */}
+                    />
                   </div>
                   <h3 className="text-lg font-semibold text-green-800">
                     {teacher.name}
                   </h3>
                   <p className="text-green-600 mb-2">{teacher.title}</p>
-                  <p className="text-gray-600 text-sm">{teacher.bio}</p>
+                  <p className="text-gray-700 text-sm">{teacher.bio}</p>
                 </CardContent>
               </Card>
             </motion.div>

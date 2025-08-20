@@ -15,7 +15,7 @@ export default function About() {
         About <Span>Us</Span>
         <H3> Al-Maysaroh Quran Institute</H3>
       </H2>
-      <Description className="text-gray-300" >
+      <Description className="text-surface font-medium " >
         <AboutIntro />
       </Description>
 

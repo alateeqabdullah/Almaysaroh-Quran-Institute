@@ -15,7 +15,7 @@ export default function ContactSection() {
           about our programs.
         </Description>
 
-        <div className="grid gap-8 md:grid-cols-3 max-w-4xl mx-auto">
+        <div className="grid gap-8 text-gray-900 md:grid-cols-3 max-w-4xl mx-auto">
           {/* Location */}
           <motion.div
             className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition-all flex flex-col items-center"
@@ -29,7 +29,7 @@ export default function ContactSection() {
             <h3 className="text-lg font-semibold text-green-800 mb-2">
               Our Location
             </h3>
-            <p className="text-gray-600 text-center">
+            <p className="text-center">
               Al-Maysaroh Quran Institute, Ibadan, Oyo, Nigeria
             </p>
           </motion.div>
@@ -45,7 +45,7 @@ export default function ContactSection() {
               <Mail size={28} />
             </div>
             <h3 className="text-lg font-semibold text-green-800 mb-2">Email</h3>
-            <p className="text-gray-600 text-center">
+            <p className="text-center">
               almaysaroh3117.com
             </p>
           </motion.div>
@@ -61,7 +61,7 @@ export default function ContactSection() {
               <Phone size={28} />
             </div>
             <h3 className="text-lg font-semibold text-green-800 mb-2">Phone</h3>
-            <p className="text-gray-600 text-center">+234 703 117 0308</p>
+            <p className="text-gray-900 text-center">+234 703 117 0308</p>
           </motion.div>
         </div>
 

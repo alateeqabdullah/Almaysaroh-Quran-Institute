@@ -34,10 +34,10 @@ const events: Event[] = [
 
 export default function Events() {
   return (
-    <section className="py-20 bg-yellow-700 ">
+    <section className="py-20 bg-yellow-600 ">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <H2>Upcoming Events</H2>
-        <Description className="text-gray-300 mb-12 ">
+        <H2 className="  " >Upcoming Events</H2>
+        <Description className="text-green-900 mb-12 ">
           Join our upcoming programs and events designed to help students
           advance in their Qur’an learning journey.
         </Description>
@@ -58,7 +58,7 @@ export default function Events() {
                 {event.title}
               </h3>
               <p className="text-green-600 mb-2">{event.date}</p>
-              <p className="text-gray-600 text-sm">{event.description}</p>
+              <p className="text-gray-700 text-sm">{event.description}</p>
             </motion.div>
           ))}
         </div>
