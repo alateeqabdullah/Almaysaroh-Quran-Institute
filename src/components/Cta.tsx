@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import H2 from "./H2";
 import Description from "./Description";
 import EnrollButton from "./EnrollButton";
