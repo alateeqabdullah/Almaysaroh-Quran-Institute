@@ -1,0 +1,21 @@
+[
+  {
+    "id": "abdullah",
+    "name": "Shaykh Abubakr Abdullah",
+    "avatar": "/avatars/abdullah.jpg",
+    "bio": "Ijazah in Hafs & Shu’bah. 12 years teaching experience.",
+    "speciality": ["Tajweed", "Qirat"],
+    "languages": ["English", "Arabic"]
+  },
+  {
+    "id": "fatimah",
+    "name": "Ustadha Fatimah Alagbada",
+    "avatar": "/avatars/amina.jpg",
+    "bio": "Certified female tutor focused on sisters & children.",
+    "speciality": ["Hifz", "Islamic Studies"],
+    "languages": ["English", "Arabic"]
+  }
+]
+
+
+

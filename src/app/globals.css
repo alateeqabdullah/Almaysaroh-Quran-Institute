@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+.arabic-text {
+  direction: rtl;
+  text-align: right;
+}
+
+
+@import "tailwindcss";
+
+/* ===== Light Theme ===== */
+@theme {
+  /* Base */
+  --color-bg: #F0FAF4;
+  --color-surface: #FFFFFF;
+  --color-card: #FFFFFF;
+  --color-border: #D0EAD6;
+
+  /* Text */
+  --color-text: #033D1A;
+  --color-text-sec: #066B36;
+  --color-muted: #A3D9C9;
+
+  /* Brand / Primary */
+  --color-primary: #046A38;
+  --color-primary-light: #2ECC71;
+  --color-primary-dark: #033D1A;
+
+  /* Accent / Gold */
+  --color-accent: #A67C00;
+  --color-accent-light: #F1C27D;
+
+  /* UI Specific */
+  --color-navbar: #FFFFFF;
+  --color-footer: #F0FAF4;
+  --color-input-bg: #FFFFFF;
+  --color-input-border: #D0EAD6;
+  --color-input-text: #033D1A;
+}
+
+/* ===== Dark Theme ===== */
+.dark {
+  /* Base */
+  --color-bg: #0D1F17;
+  --color-surface: #1C2A24;
+  --color-card: #1C2A24;
+  --color-border: #2E4A3D;
+
+  /* Text */
+  --color-text: #D0F0E0;
+  --color-text-sec: #A3D9C9;
+  --color-muted: #6FBFAF;
+
+  /* Brand / Primary */
+  --color-primary: #1ABC9C;
+  --color-primary-light: #48C9B0;
+  --color-primary-dark: #046A38;
+
+  /* Accent / Gold */
+  --color-accent: #F1C27D;
+  --color-accent-light: #FFD966;
+
+  /* UI Specific */
+  --color-navbar: #1C2A24;
+  --color-footer: #0D1F17;
+  --color-input-bg: #1C2A24;
+  --color-input-border: #2E4A3D;
+  --color-input-text: #D0F0E0;
+}

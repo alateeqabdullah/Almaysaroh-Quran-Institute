@@ -1,0 +1,5 @@
+[
+  { "name": "Trial Lesson", "price": 0, "duration": "30 min", "features": ["Assessment", "Tajweed check"] },
+  { "name": "Starter Pack", "price": 79, "duration": "4×45 min", "features": ["1-on-1", "Custom plan", "Progress report"] },
+  { "name": "Memorisation", "price": 149, "duration": "8×45 min", "features": ["Hifz goal", "Daily revision", "Monthly test"] }
+]

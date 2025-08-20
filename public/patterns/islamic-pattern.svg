@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+  <defs>
+    <!-- Soft lines; tweak stroke-opacity for stronger/weaker look -->
+    <g id="tile" stroke="#065f46" stroke-width="1" stroke-opacity="0.18" fill="none">
+      <!-- Star grid (eight-point) -->
+      <path d="M80 10 L95 35 L125 35 L105 55 L110 85 L80 70 L50 85 L55 55 L35 35 L65 35 Z"/>
+      <!-- Inner star -->
+      <path d="M80 26 L90 42 L110 42 L96 54 L99 74 L80 65 L61 74 L64 54 L50 42 L70 42 Z" stroke-opacity="0.22"/>
+      <!-- Cross connections -->
+      <path d="M80 0 V160 M0 80 H160" stroke-opacity="0.12"/>
+      <!-- Diagonal guides -->
+      <path d="M-20 80 L180 80 M80 -20 L80 180" stroke="none"/>
+      <path d="M0 0 L160 160 M160 0 L0 160" stroke-opacity="0.10"/>
+      <!-- Corner rosettes -->
+      <circle cx="20" cy="20" r="6" />
+      <circle cx="140" cy="20" r="6" />
+      <circle cx="20" cy="140" r="6" />
+      <circle cx="140" cy="140" r="6" />
+      <!-- Small accents -->
+      <circle cx="80" cy="80" r="3" stroke-opacity="0.25"/>
+      <circle cx="80" cy="35" r="2" />
+      <circle cx="35" cy="80" r="2" />
+      <circle cx="125" cy="80" r="2" />
+      <circle cx="80" cy="125" r="2" />
+    </g>
+
+    <!-- Define pattern for seamless tiling -->
+    <pattern id="geo" width="160" height="160" patternUnits="userSpaceOnUse">
+      <use href="#tile"/>
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#geo)"/>
+</svg>
