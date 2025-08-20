@@ -10,7 +10,7 @@ import Description from "./Description";
 
 export default function About() {
   return (
-    <section className="text-center bg-green-800 pb-16 pt-30 ">
+    <section className="text-center bg-primary pb-16 pt-30 ">
       <H2 className=" ">
         About <Span>Us</Span>
         <H3> Al-Maysaroh Quran Institute</H3>
