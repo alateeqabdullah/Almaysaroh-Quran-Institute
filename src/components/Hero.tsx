@@ -34,12 +34,12 @@ export default function Hero() {
             understanding.
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center lg:justify-start  gap-4 pt-2">
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start text-primary  gap-4 pt-2">
             <EnrollButton>Enroll Now</EnrollButton>
             <Button
               size="lg"
               variant="outline"
-              className="border-primary text-text-sec  py-6 text-xl w-full sm:w-auto"
+              className="border-primary text-primary hover:text-surface hover:bg-primary py-6 text-xl w-full sm:w-auto"
               asChild
             >
               <Link href={"/programs"}>Learn More</Link>

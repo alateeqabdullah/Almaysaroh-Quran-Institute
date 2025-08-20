@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav className="fixed bg-white top-0 left-0 w-full shadow-md z-50">
       <div className="max-w-7xl mx-auto px-10 py-8 flex items-center justify-between   ">
         {/* Logo */}
-        <Link href="/" className="text-3xl font-bold text-primary ">
+        <Link href="/" className=" text-xl md:text-2xl lg:text-3xl font-bold text-primary ">
           Almaysaroh
         </Link>
 

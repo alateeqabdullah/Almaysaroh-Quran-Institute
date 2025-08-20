@@ -110,9 +110,6 @@
 //   );
 // }
 
-
-
-
 "use client";
 
 import * as React from "react";
@@ -124,21 +121,101 @@ import { motion } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import H2 from "./H2";
 
-type Testimonial = { name: string; role: string; text: string };
+type Testimonial = { name: string; role: string; feedback: string };
 
 const testimonials: Testimonial[] = [
-  { name: "Amina Yusuf", role: "Parent", text: "Al-Maysaroh has transformed the way my children learn Qur’an. The teachers are patient and dedicated." },
-  { name: "Abdullah Ibrahim", role: "Student", text: "A truly welcoming environment. My recitation has improved greatly since joining." },
-  { name: "Fatima Bello", role: "Parent", text: "The programs are well-structured and easy to follow. Highly recommended." },
-  { name: "Muhammad Ali", role: "Student", text: "Online classes are smooth, and I’m always motivated to continue learning." },
-  { name: "Zainab Suleiman", role: "Parent", text: "Excellent teachers who genuinely care about progress." },
-  { name: "Hassan Umar", role: "Student", text: "I was a beginner—now I read with confidence." },
-  { name: "Maryam Usman", role: "Parent", text: "Uplifting atmosphere. My child looks forward to classes." },
-  { name: "Khalid Sani", role: "Alumnus", text: "One of the best decisions for my spiritual growth." },
+  {
+    name: "Amina Yusuf",
+    role: "Parent",
+    feedback: "Al-Maysaroh has transformed the way my children learn Qur’an. The teachers are patient and dedicated.",
+  },
+  {
+    name: "Abdullah Ibrahim",
+    role: "Student",
+    feedback: "A truly welcoming environment. My recitation has improved greatly since joining.",
+  },
+  {
+    name: "Fatima Bello",
+    role: "Parent",
+    feedback: "The programs are well-structured and easy to follow. Highly recommended.",
+  },
+  {
+    name: "Muhammad Ali",
+    role: "Student",
+    feedback: "Online classes are smooth, and I’m always motivated to continue learning.",
+  },
+  {
+    name: "Zainab Suleiman",
+    role: "Parent",
+    feedback: "Excellent teachers who genuinely care about progress.",
+  },
+  {
+    name: "Hassan Umar",
+    role: "Student",
+    feedback: "I was a beginner—now I read with confidence.",
+  },
+  {
+    name: "Maryam Usman",
+    role: "Parent",
+    feedback: "Uplifting atmosphere. My child looks forward to classes.",
+  },
+  {
+    name: "Khalid Sani",
+    role: "Alumnus",
+    feedback: "One of the best decisions for my spiritual growth.",
+  },
+   {
+    name: "Fatimah Yusuf",
+    role: "Parent",
+    feedback:
+      "Al-Maysaroh has transformed my son’s learning experience. The teachers are patient, dedicated, and truly care about the students’ success.",
+  },
+  {
+    name: "Abdullah Musa",
+    role: "Student",
+    feedback:
+      "I never thought learning Qur’an could be this engaging. The online sessions feel like I am in a real classroom.",
+  },
+  {
+     name: "Maryam Ibrahim",
+     role: "Parent",
+     feedback:
+    "The flexibility of classes is what stands out. I can schedule lessons around my child’s daily activities. It’s a blessing!",
+  },
+  {
+   name: "Ahmed Ali",
+   role: "Student",
+   feedback:
+     "The teachers explain everything clearly and encourage us to do our best. I feel more confident in my recitation now.",
+  },
+ {
+  name: "Zainab Sani",
+   role: "Parent",
+   feedback:
+   "This is more than just a Qur’an school. It feels like a community where every student is valued.",
+ },
+  {
+   name: "Hassan Umar",
+   role: "Student",
+  feedback:
+    "I love the way classes are interactive. It doesn’t feel boring at all. I’ve improved so much since joining.",
+   },
+  {
+    name: "Aisha Abdulkareem",
+   role: "Parent",
+   feedback:
+    "Al-Maysaroh makes learning accessible. I appreciate how they keep parents updated on progress.",
+  },
+  {
+  name: "Ibrahim Sule",
+ role: "Student",
+feedback:
+     "The best part is the teachers are approachable and always willing to help. It motivates me to keep learning.",
+  },
 ];
 
 export default function TestimonialsCarousel() {
-  // ✅ Make the plugin instance stable across renders
+  //  ✅ Make the plugin instance stable across renders
   const autoplay = React.useRef(
     Autoplay({
       delay: 4000,
@@ -175,12 +252,18 @@ export default function TestimonialsCarousel() {
     onSelect();
   }, [emblaApi, onSelect]);
 
-  const scrollPrev = React.useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
-  const scrollNext = React.useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+  const scrollPrev = React.useCallback(
+    () => emblaApi?.scrollPrev(),
+    [emblaApi]
+  );
+  const scrollNext = React.useCallback(
+    () => emblaApi?.scrollNext(),
+    [emblaApi]
+  );
   const scrollTo = (idx: number) => emblaApi?.scrollTo(idx);
 
   return (
-    <section className="py-20 bg-green-800 relative">
+    <section className="py-20 bg-primary relative">
       <div className="max-w-6xl mx-auto px-6">
         <H2 className="text-3xl md:text-4xl lg:text-5xl mb-12 ">
           What Our Community Says
@@ -201,10 +284,10 @@ export default function TestimonialsCarousel() {
                   transition={{ duration: 0.4, delay: i * 0.05 }}
                   className="h-full"
                 >
-                  <Card className="h-full rounded-2xl shadow-md border border-green-100 bg-white hover:shadow-lg transition">
+                  <Card className="h-full rounded-2xl shadow-md border border-green-100 bg-green-50 hover:shadow-lg transition">
                     <CardContent className="p-6 h-full flex flex-col justify-between">
                       <p className="text-gray-700 italic leading-relaxed">
-                        “{t.text}”
+                        “{t.feedback}”
                       </p>
                       <div className="mt-5">
                         <h4 className="font-semibold text-green-800">

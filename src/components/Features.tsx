@@ -163,10 +163,10 @@ export default function WhyAlmaysaroh() {
                 transition={{ delay: index * 0.2, duration: 0.6 }}
                 className="bg-white shadow-lg rounded-2xl p-8 border border-green-200 hover:shadow-xl hover:border-green-400 transition-all"
               >
-                <div className="flex items-center justify-center w-30 h-30 rounded-full bg-green-300 text-primary mx-auto mt-4 mb-8">
+                <div className="flex items-center justify-center w-30 h-30 rounded-full bg-green-300 text-green-800 mx-auto mt-4 mb-8">
                   <Icon size={50} />
                 </div>
-                <h3 className="text-3xl font-semibold text-primary-dark mb-5">
+                <h3 className="text-3xl font-semibold text-primary mb-5">
                   {feature.title}
                 </h3>
                 <p className=" text-lg text-gray-600">{feature.description}</p>

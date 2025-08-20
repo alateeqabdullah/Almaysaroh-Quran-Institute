@@ -7,9 +7,9 @@ import H2 from "./H2";
 
 export default function ContactSection() {
   return (
-    <section className="py-20 bg-green-50 ">
+    <section className="py-20 bg-surface" >
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <H2 className="text-green-800 mb-4">Contact Us</H2>
+        <H2 className="text-primary mb-4">Contact Us</H2>
         <Description className=" mb-12 max-w-2xl mx-auto">
           Get in touch with us for inquiries, enrollment, or more information
           about our programs.

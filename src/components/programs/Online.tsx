@@ -50,8 +50,10 @@ export default function OnlinePrograms() {
           );
         })}
       </div>
-      <div>
-        <Button asChild>
+      <div className=" text-center mt-10 text-surface " >
+        <Button
+        className="bg-yellow-500 font-medium text-xl px-8 hover:bg-yellow-600 "
+          asChild>
           <Link href={"/pricing"}>See Pricing</Link>
         </Button>
       </div>
