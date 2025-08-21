@@ -220,87 +220,87 @@
 //   );
 // }
 
-// app/register/page.tsx
-"use client";
+// // app/register/page.tsx
+// "use client";
 
-import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
+// import { useState } from "react";
+// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+// import { Input } from "@/components/ui/input";
+// import { Button } from "@/components/ui/button";
+// import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+// import { Textarea } from "@/components/ui/textarea";
 
-export default function RegisterPage() {
-  const [studyType, setStudyType] = useState("");
-  const [program, setProgram] = useState("");
+// export default function RegisterPage() {
+//   const [studyType, setStudyType] = useState("");
+//   const [program, setProgram] = useState("");
 
-  return (
-    <section className="container mx-auto py-12">
-      <Card className="max-w-2xl mx-auto shadow-lg">
-        <CardHeader>
-          <CardTitle className="text-2xl text-center">Register at Al-Maysaroh Qur’an Institute</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-6">
-          {/* Full Name */}
-          <div>
-            <label className="block mb-1 font-medium">Full Name</label>
-            <Input placeholder="Enter your full name" />
-          </div>
+//   return (
+//     <section className="container mx-auto py-12">
+//       <Card className="max-w-2xl mx-auto shadow-lg">
+//         <CardHeader>
+//           <CardTitle className="text-2xl text-center">Register at Al-Maysaroh Qur’an Institute</CardTitle>
+//         </CardHeader>
+//         <CardContent className="space-y-6">
+//           {/* Full Name */}
+//           <div>
+//             <label className="block mb-1 font-medium">Full Name</label>
+//             <Input placeholder="Enter your full name" />
+//           </div>
 
-          {/* Email */}
-          <div>
-            <label className="block mb-1 font-medium">Email</label>
-            <Input type="email" placeholder="Enter your email" />
-          </div>
+//           {/* Email */}
+//           <div>
+//             <label className="block mb-1 font-medium">Email</label>
+//             <Input type="email" placeholder="Enter your email" />
+//           </div>
 
-          {/* Phone */}
-          <div>
-            <label className="block mb-1 font-medium">Phone Number</label>
-            <Input type="tel" placeholder="Enter your phone number" />
-          </div>
+//           {/* Phone */}
+//           <div>
+//             <label className="block mb-1 font-medium">Phone Number</label>
+//             <Input type="tel" placeholder="Enter your phone number" />
+//           </div>
 
-          {/* Study Type */}
-          <div>
-            <label className="block mb-1 font-medium">Study Type</label>
-            <Select onValueChange={(val) => setStudyType(val)}>
-              <SelectTrigger>
-                <SelectValue placeholder="Select study type" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="online">Online</SelectItem>
-                <SelectItem value="physical">Physical</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
+//           {/* Study Type */}
+//           <div>
+//             <label className="block mb-1 font-medium">Study Type</label>
+//             <Select onValueChange={(val) => setStudyType(val)}>
+//               <SelectTrigger>
+//                 <SelectValue placeholder="Select study type" />
+//               </SelectTrigger>
+//               <SelectContent>
+//                 <SelectItem value="online">Online</SelectItem>
+//                 <SelectItem value="physical">Physical</SelectItem>
+//               </SelectContent>
+//             </Select>
+//           </div>
 
-          {/* Program */}
-          <div>
-            <label className="block mb-1 font-medium">Program</label>
-            <Select onValueChange={(val) => setProgram(val)}>
-              <SelectTrigger>
-                <SelectValue placeholder="Select a program" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="qiroah">Qirõ’ah</SelectItem>
-                <SelectItem value="tajweed">Tajweed</SelectItem>
-                <SelectItem value="tahfeedh">Tahfeedh</SelectItem>
-                <SelectItem value="murojaah">Murõja’ah</SelectItem>
-                <SelectItem value="qiroaat">Qirõ’aat</SelectItem>
-                <SelectItem value="intensive">Intensive Ta’leem</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
+//           {/* Program */}
+//           <div>
+//             <label className="block mb-1 font-medium">Program</label>
+//             <Select onValueChange={(val) => setProgram(val)}>
+//               <SelectTrigger>
+//                 <SelectValue placeholder="Select a program" />
+//               </SelectTrigger>
+//               <SelectContent>
+//                 <SelectItem value="qiroah">Qirõ’ah</SelectItem>
+//                 <SelectItem value="tajweed">Tajweed</SelectItem>
+//                 <SelectItem value="tahfeedh">Tahfeedh</SelectItem>
+//                 <SelectItem value="murojaah">Murõja’ah</SelectItem>
+//                 <SelectItem value="qiroaat">Qirõ’aat</SelectItem>
+//                 <SelectItem value="intensive">Intensive Ta’leem</SelectItem>
+//               </SelectContent>
+//             </Select>
+//           </div>
 
-          {/* Schedule Notes */}
-          <div>
-            <label className="block mb-1 font-medium">Preferred Schedule / Notes</label>
-            <Textarea placeholder="E.g. Weekends only, mornings preferred, etc." />
-          </div>
+//           {/* Schedule Notes */}
+//           <div>
+//             <label className="block mb-1 font-medium">Preferred Schedule / Notes</label>
+//             <Textarea placeholder="E.g. Weekends only, mornings preferred, etc." />
+//           </div>
 
-          {/* Submit */}
-          <Button className="w-full">Submit Registration</Button>
-        </CardContent>
-      </Card>
-    </section>
-  );
-}
+//           {/* Submit */}
+//           <Button className="w-full">Submit Registration</Button>
+//         </CardContent>
+//       </Card>
+//     </section>
+//   );
+// }
