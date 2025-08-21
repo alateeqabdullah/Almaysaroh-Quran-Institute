@@ -132,12 +132,12 @@ export default function WhyAlmaysaroh() {
       <div className="max-w-7xl mx-auto text-center">
         {/* Section Heading */}
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-green-800 mb-4"
+          className="text-2xl md:text-4xl font-bold text-green-800 mb-4"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Why <span className="text-green-600 text-5xl md:text-6xl ">Al-maysaroh</span> Stands Out
+          Why <span className="text-green-600 text-4xl md:text-6xl ">Al-maysaroh</span> Stands Out
         </motion.h2>
 
         <motion.p
@@ -161,12 +161,12 @@ export default function WhyAlmaysaroh() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2, duration: 0.6 }}
-                className="bg-white shadow-lg rounded-2xl p-8 border border-green-200 hover:shadow-xl hover:border-green-400 transition-all"
+                className="bg-white shadow-lg rounded-2xl p-6 border border-green-200 hover:shadow-xl hover:border-green-400 transition-all"
               >
-                <div className="flex items-center justify-center w-30 h-30 rounded-full bg-green-300 text-green-800 mx-auto mt-4 mb-8">
-                  <Icon size={50} />
+                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-200 text-green-800 mx-auto mt-4 mb-8">
+                  <Icon size={30} />
                 </div>
-                <h3 className="text-3xl font-semibold text-primary mb-5">
+                <h3 className="text-2xl font-semibold text-primary mb-5">
                   {feature.title}
                 </h3>
                 <p className=" text-lg text-gray-600">{feature.description}</p>
