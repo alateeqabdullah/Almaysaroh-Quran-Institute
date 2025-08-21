@@ -79,7 +79,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <EnrollButton className=" rounded-full py-20" >
+            <EnrollButton className=" rounded py-6" >
               Enroll Now
             </EnrollButton>
           </div>
