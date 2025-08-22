@@ -8,17 +8,17 @@ import {
 } from "@/config/pricing";
 import { notFound } from "next/navigation";
 
-type Mode = "online" | "day" | "boarding";
+// type Mode = "online" | "day" | "boarding";
 
-const dayModes: Mode[] = ["online", "day", "boarding"];
+const dayModes = ["online", "day", "boarding"];
 
 
 
-export default  function PricingPage({ slug }: { slug: string }) {
+export default  function PricingPage({ slug }) {
   const program = getProgramBySlug(slug);
-  const [mode, setMode] = useState<Mode>("online");
-  const [daysPerWeek, setDaysPerWeek] = useState<number>(3);
-  const [minutes, setMinutes] = useState<30 | 45 | 60>(30);
+  const [mode, setMode] = useState("online");
+  const [daysPerWeek, setDaysPerWeek] = useState(3);
+  const [minutes, setMinutes] = useState(30);
 
   const isMurajaah = program?.slug === "murojaah";
 
@@ -96,7 +96,7 @@ export default  function PricingPage({ slug }: { slug: string }) {
                     className="mt-1 w-full rounded-lg border border-emerald-200 px-3 py-2 bg-white"
                     value={minutes}
                     onChange={(e) =>
-                      setMinutes(Number(e.target.value) as 30 | 45 | 60)
+                      setMinutes(Number(e.target.value) )
                     }
                   >
                     {[30, 45, 60].map((m) => (

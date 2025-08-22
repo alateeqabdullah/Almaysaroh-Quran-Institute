@@ -151,7 +151,7 @@ export default function WhyAlmaysaroh() {
         </motion.p>
 
         {/* Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3  gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
@@ -169,7 +169,7 @@ export default function WhyAlmaysaroh() {
                 <h3 className="text-2xl font-semibold text-primary mb-5">
                   {feature.title}
                 </h3>
-                <p className=" text-lg text-gray-600">{feature.description}</p>
+                <p className=" text-gray-600">{feature.description}</p>
               </motion.div>
             );
           })}

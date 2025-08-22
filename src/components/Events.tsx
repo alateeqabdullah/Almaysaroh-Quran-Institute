@@ -4,40 +4,14 @@ import { Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 import H2 from "./H2";
 import Description from "./Description";
-
-type Event = {
-  title: string;
-  date: string;
-  description: string;
-};
-
-const events: Event[] = [
-  {
-    title: "Ramadan Tahfeedh Program",
-    date: "April 1 - April 30, 2026",
-    description:
-      "Intensive memorization sessions during Ramadan for all age groups.",
-  },
-  {
-    title: "Khatmah Ceremony",
-    date: "May 15, 2026",
-    description:
-      "Celebrate students completing their Qur’an memorization journey.",
-  },
-  {
-    title: "Tajweed Summer Camp",
-    date: "June 10 - June 25, 2026",
-    description:
-      "Improve recitation skills with focused Tajweed sessions for children and adults.",
-  },
-];
+import { events } from "@/data/events";
 
 export default function Events() {
   return (
     <section className="py-20 bg-yellow-600 ">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <H2 className="  " >Upcoming Events</H2>
-        <Description className="text-green-900 mb-12 ">
+        <H2 className="text-black ">Upcoming Events</H2>
+        <Description className=" text-white mb-12 ">
           Join our upcoming programs and events designed to help students
           advance in their Qur’an learning journey.
         </Description>
