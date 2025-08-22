@@ -16,7 +16,7 @@
 //   }[];
 // };
 
-import { BookAlert, BookCopy, BookOpen, GraduationCap, PenTool } from "lucide-react";
+import { BookAlert, BookAlertIcon, BookCheck, BookCopy, BookOpen, BookOpenCheck, GraduationCap, PenTool } from "lucide-react";
 
 // export const programs: Program[] = [
 //   {
@@ -227,6 +227,7 @@ export type PhysicalOptions = {
 export type Program = {
   slug: string;
   name: string;
+  icon: React.ElementType;
   description: string;
   outline: string[];
   requirements: string[];
@@ -240,6 +241,7 @@ export const programs: Program[] = [
   {
     slug: "qiraah",
     name: "Qirõ'ah",
+    icon: BookOpen,
     description:
       "Focuses on mastering the correct recitation of the Qur’an with emphasis on phonetics and articulation. Students will learn the proper way to pronounce each letter and word.",
     outline: [
@@ -270,6 +272,7 @@ export const programs: Program[] = [
   {
     slug: "tajweed",
     name: "Tajweed",
+    icon: BookOpen,
     description:
       "Dedicated to learning the rules of Tajweed to ensure proper Qur’anic recitation with precision and beauty. Includes practical recitations and corrections.",
     outline: [
@@ -297,6 +300,7 @@ export const programs: Program[] = [
   {
     slug: "tahfeedh",
     name: "Tahfeedh",
+    icon: PenTool,
     description:
       "A structured memorization program for the Qur’an. Students are guided through consistent memorization and revision schedules.",
     outline: [
@@ -327,6 +331,7 @@ export const programs: Program[] = [
   {
     slug: "qiroaat",
     name: "Qirõ’aat",
+    icon: BookAlertIcon,
     description:
       "Advanced study of the different recognized modes of Qur’anic recitation (Qirõ’aat).",
     outline: [
@@ -354,6 +359,7 @@ export const programs: Program[] = [
   {
     slug: "murojaah",
     name: "Murõja’ah",
+    icon: BookCheck,
     description:
       "Designed for students who have already memorized parts or the whole Qur’an to revise and strengthen their retention.",
     outline: [
@@ -374,6 +380,7 @@ export const programs: Program[] = [
   {
     slug: "intensive-taleem",
     name: "Intensive Ta’leem",
+    icon: BookOpenCheck,
     description:
       "A comprehensive Islamic learning program designed for students who want to cover all aspects — Qirõ’ah, Tajweed, Tahfeedh, Fiqh, and more — in an intensive format.",
     outline: [
