@@ -8,7 +8,6 @@ import {
 } from "@/config/pricing";
 import { notFound } from "next/navigation";
 
-// type Mode = "online" | "day" | "boarding";
 
 const dayModes = ["online", "day", "boarding"];
 

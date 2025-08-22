@@ -6,8 +6,15 @@
   text-align: right;
 }
 
+/* globals.css or tailwind base */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 
-@import "tailwindcss";
+.animate-spin-slow {
+  animation: spin-slow 2s linear infinite;
+}
 
 /* ===== Light Theme ===== */
 @theme {
