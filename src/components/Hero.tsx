@@ -9,7 +9,7 @@ import EnrollButton from "./EnrollButton";
 
 export default function Hero() {
   return (
-    <section className="relative  overflow-hidden ">
+    <section className="relative pb-40 overflow-hidden ">
       {/* Subtle pattern background (optional) */}
       {/* <div className="absolute inset-0 bg-[url('/patterns/islamic-pattern.svg')] opacity-5 pointer-events-none" /> */}
 
