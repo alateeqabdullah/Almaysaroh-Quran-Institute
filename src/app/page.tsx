@@ -9,8 +9,11 @@ import Events from "@/components/Events";
 import FAQSection from "@/components/Faqs";
 import ContactSection from "@/components/Contact";
 import About from "@/components/About";
+import { sleep } from "@/lib/utils";
 
-export default function Home() {
+export default async function Home() {
+  await sleep(2000)
+  
   return (
     <main className=" " >
       <Hero />
