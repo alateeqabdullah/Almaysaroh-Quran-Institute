@@ -11,7 +11,7 @@ import { sleep } from "@/lib/utils";
 
 // components/AboutIntro.tsx
 export default async function About() {
-  await sleep(3000)
+  await sleep(2000)
   
   return (
     <main className="px-6 text-center  ">
