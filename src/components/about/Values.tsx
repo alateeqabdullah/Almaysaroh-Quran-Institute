@@ -5,7 +5,7 @@ import H3 from "../H3";
 
 export default function Values() {
   return (
-    <section className="py-16 pb-24 px-6 max-w-6xl mx-auto rounded-2xl">
+    <section className="py-16 px-6 max-w-6xl mx-auto rounded-2xl">
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="flex-shrink-0">
           <div className="bg-green-300 0 p-6 rounded-full w-24 h-24 flex items-center justify-center mx-auto md:mx-0">

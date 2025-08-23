@@ -472,7 +472,7 @@ export default function ProgramDetailsPage() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto pt-40 p-30">
+    <div className="max-w-4xl mx-auto px-16 pb-16 ">
       <h1 className="text-3xl font-bold text-emerald-700 mb-4">{program.name}</h1>
       <p className="text-gray-700 mb-6">{program.description}</p>
 

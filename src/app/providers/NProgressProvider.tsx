@@ -1,30 +1,25 @@
-// "use client";
+"use client";
 
-// import { useEffect } from "react";
-// import { usePathname, useRouter } from "next/navigation";
-// import NProgress from "nprogress";
-// import "nprogress/nprogress.css";
+import { useEffect } from "react";
+import { usePathname } from "next/navigation";
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
 
-// export default function NProgressProvider() {
-//   const router = useRouter();
-//   const pathname = usePathname();
 
-//   useEffect(() => {
-//     NProgress.configure({ showSpinner: false, speed: 400, minimum: 0.1 });
+ NProgress.configure({ showSpinner: false, speed: 400, minimum: 0.2 });
 
-//     const handleStart = () => NProgress.start();
-//     const handleStop = () => NProgress.done();
+export default function NProgressProvider() {
+  const pathname = usePathname();
 
-//     router.events?.on("routeChangeStart", handleStart);
-//     router.events?.on("routeChangeComplete", handleStop);
-//     router.events?.on("routeChangeError", handleStop);
+    useEffect(() => {
+       NProgress.start();
+   
+  const timer = setTimeout(() => {
+    NProgress.done()
+  }, 400);
+      
+      return ()=> clearTimeout(timer)
+  }, [pathname]);
 
-//     return () => {
-//       router.events?.off("routeChangeStart", handleStart);
-//       router.events?.off("routeChangeComplete", handleStop);
-//       router.events?.off("routeChangeError", handleStop);
-//     };
-//   }, [router]);
-
-//   return null;
-// }
+  return null;
+}

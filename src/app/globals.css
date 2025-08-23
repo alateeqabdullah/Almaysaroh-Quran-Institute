@@ -16,6 +16,11 @@
   animation: spin-slow 2s linear infinite;
 }
 
+#nprogress .bar {
+  background: #10b981 !important; /* emerald */
+  height: 3px !important;
+}
+
 /* ===== Light Theme ===== */
 @theme {
   /* Base */

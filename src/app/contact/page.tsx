@@ -1,21 +1,15 @@
 "use client";
 
+import H2 from "@/components/H2";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, MessageSquarePlus } from "lucide-react";
 
 export default function ContactPage() {
   return (
-    <section className="min-h-screen bg-white py-50">
+    <section className="min-h-screen pb-20">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold text-emerald-700 text-center"
-        >
-          Contact Us
-        </motion.h1>
+        <H2 className="text-green-700 ">Contact Us</H2>
         <p className="text-center mt-4 text-gray-600 max-w-2xl mx-auto">
           We’d love to hear from you. Whether you have a question about
           programs, pricing, or enrollment, our team is ready to answer all your
@@ -41,9 +35,7 @@ export default function ContactPage() {
             </div>
             <div className="flex items-center gap-4">
               <MessageSquarePlus className="w-6 h-6 text-emerald-600" />
-              <p className="text-gray-700">
-               chat with us on WhatsApp
-              </p>
+              <p className="text-gray-700">chat with us on WhatsApp</p>
             </div>
 
             {/* Optional Map */}

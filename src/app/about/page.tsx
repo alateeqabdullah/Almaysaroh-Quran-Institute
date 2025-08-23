@@ -11,9 +11,10 @@ import { sleep } from "@/lib/utils";
 
 // components/AboutIntro.tsx
 export default async function About() {
-  await sleep(2000)
+  await sleep(3000)
+  
   return (
-    <main className=" pt-50  px-6 text-center  ">
+    <main className="px-6 text-center  ">
       <H2 className=" text-green-800 ">
         About <Span>Us</Span>
         <H3> Al-Maysaroh Quran Institute</H3>

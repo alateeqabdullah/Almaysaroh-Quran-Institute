@@ -5,7 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import GlobalLoader from "@/components/GlobalLoader";
+import NProgressProvider from "./providers/NProgressProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,12 +31,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-bg ${lateef.variable} antialiased  `}
+        className={`${inter.className} bg-bg ${lateef.variable} antialiased flex flex-col pt-40 min-h-dvh `}
       >
+        <NProgressProvider />
         <Navbar />
-        <GlobalLoader />
+        <main className="grow ">
+          
           {children}
-        
+     </main>
         <Footer />
         <WhatsAppButton />
       </body>
