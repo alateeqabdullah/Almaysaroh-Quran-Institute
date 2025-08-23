@@ -31,14 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-bg ${lateef.variable} antialiased flex flex-col pt-40 min-h-dvh `}
+        className={`${inter.className} bg-bg ${lateef.variable} antialiased flex flex-col  min-h-dvh `}
       >
         <NProgressProvider />
         <Navbar />
-        <main className="grow ">
-          
-          {children}
-     </main>
+        <main className="grow pt-40 ">{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>
