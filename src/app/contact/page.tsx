@@ -29,9 +29,7 @@ export default function ContactPage() {
             </div>
             <div className="flex items-center gap-4">
               <MapPin className="w-6 h-6 text-emerald-600" />
-              <p className="text-gray-700">
-                Al-Hidayah Islamic Centre, Kaduna, Nigeria
-              </p>
+              <p className="text-gray-700">{" Al-Maysaroh Qur'an Institute"}</p>
             </div>
             <div className="flex items-center gap-4">
               <MessageSquarePlus className="w-6 h-6 text-emerald-600" />
@@ -39,9 +37,27 @@ export default function ContactPage() {
             </div>
 
             {/* Optional Map */}
-            <div className="w-full h-56 bg-gray-200 rounded-xl shadow-inner flex items-center justify-center text-gray-500 text-sm">
-              Google Maps Embed Here
-            </div>
+            {/* Google Maps Embed */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="w-full max-w-5xl"
+            >
+              <h2 className="text-2xl font-semibold text-emerald-700 text-center mb-6">
+                Visit Us
+              </h2>
+              <iframe
+                src="https://www.google.com/maps?q=Plot+9,+Moradeyo+L/Adisa+Layout,+IdiOse,+Moniya+Express,+Ibadan,+Oyo&output=embed"
+                width="100%"
+                
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-2xl shadow-xl border border-emerald-100"
+              ></iframe>
+            </motion.div>
           </div>
 
           {/* Contact Form */}
@@ -55,7 +71,7 @@ export default function ContactPage() {
               Send us a Message
             </h2>
             <iframe
-              src="https://tally.so/embed/nr4X8N?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+              src="https://tally.so/embed/nr4X8N?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
               width="100%"
               height="400"
               frameBorder="0"
@@ -71,6 +87,3 @@ export default function ContactPage() {
 }
 
 
-// <iframe data-tally-src="https://tally.so/embed/nr4X8N?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="200" frameborder="0" marginheight="0" marginwidth="0" title="Contact form
-// "></iframe>
-// <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>

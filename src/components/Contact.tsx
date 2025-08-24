@@ -7,7 +7,7 @@ import H2 from "./H2";
 
 export default function ContactSection() {
   return (
-    <section className="py-20 bg-surface" >
+    <section className="py-20 bg-surface">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <H2 className="text-primary mb-4">Contact Us</H2>
         <Description className=" mb-12 max-w-2xl mx-auto">
@@ -45,9 +45,7 @@ export default function ContactSection() {
               <Mail size={28} />
             </div>
             <h3 className="text-lg font-semibold text-green-800 mb-2">Email</h3>
-            <p className="text-center">
-              almaysaroh3117.com
-            </p>
+            <p className="text-center">almaysaroh3117.com</p>
           </motion.div>
 
           {/* Phone */}
@@ -67,13 +65,29 @@ export default function ContactSection() {
 
         {/* Optional Map */}
         <div className="mt-12">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.123456789!2d7.435!3d10.512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sAl-Maysaroh+Quran+Institute!5e0!3m2!1sen!2sng!4v0000000000"
-            className="w-full h-64 rounded-2xl border-0 shadow-md"
-            allowFullScreen
-            loading="lazy"
-            title="Al-Maysaroh Location"
-          ></iframe>
+     
+          {/* Google Maps Embed */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="w-full max-w-5xl"
+          >
+            <h2 className="text-2xl font-semibold text-emerald-700 text-center mb-6">
+              Visit Us
+            </h2>
+            <iframe
+              src="https://www.google.com/maps?q=Plot+9,+Moradeyo+L/Adisa+Layout,+IdiOse,+Moniya+Express,+Ibadan,+Oyo&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              title="Al-Maysaroh Quran Institute"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-2xl shadow-xl border border-emerald-100"
+            ></iframe>
+          </motion.div>
         </div>
       </div>
     </section>

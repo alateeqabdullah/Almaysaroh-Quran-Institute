@@ -22,7 +22,10 @@ export default function Navbar() {
     <nav className="fixed bg-white top-0 left-0 w-full shadow-md z-50">
       <div className="max-w-7xl mx-auto px-10 py-8 flex items-center justify-between   ">
         {/* Logo */}
-        <Link href="/" className=" text-xl md:text-2xl lg:text-3xl font-bold text-primary ">
+        <Link
+          href="/"
+          className=" text-xl md:text-2xl lg:text-3xl font-bold text-primary "
+        >
           Almaysaroh
         </Link>
 
@@ -41,11 +44,11 @@ export default function Navbar() {
                   layoutId="underline"
                   className="absolute left-0 -bottom-2 w-[110%] h-[3px] bg-primary-light"
                 />
-              )} 
+              )}
             </div>
           ))}
-          <EnrollButton className=" leading-relaxed rounded-full py-6 px-6">Enroll Now
-          
+          <EnrollButton className=" leading-relaxed rounded-full py-6 px-6">
+            Enroll Now
           </EnrollButton>
         </div>
 
@@ -78,7 +81,10 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <EnrollButton className=" rounded py-6" >
+            <EnrollButton
+              onClick={() => setIsOpen(false)}
+              className=" rounded py-6"
+            >
               Enroll Now
             </EnrollButton>
           </div>

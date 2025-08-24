@@ -5,9 +5,11 @@ import { cn } from "@/lib/utils";
 interface EnrollButtonProps {
   children: React.ReactNode;
   className?: string;
+  onClick?: React.MouseEventHandler
 }
 
 export default function EnrollButton({
+  onClick,
   children,
   className,
 }: EnrollButtonProps) {
@@ -18,6 +20,7 @@ export default function EnrollButton({
         "bg-text-sec  text-white px-8 w-full py-6 text-xl sm:w-auto",
         className
       )}
+      onClick={onClick}   
       asChild
     >
       <Link href={"/register"}>{children}</Link>
