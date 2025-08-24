@@ -19,7 +19,7 @@ const lateef = Lateef({
 });
 
 export const metadata: Metadata = {
-  title: "Al-Maysaroh Institute",
+  title: "Al-Maysaroh Qur'an Institute",
   description: "Quran as a way of life",
 };
 
@@ -35,7 +35,7 @@ export default function RootLayout({
       >
         <NProgressProvider />
         <Navbar />
-        <main className="grow pt-40 ">{children}</main>
+        <main className="grow mt-40 ">{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>

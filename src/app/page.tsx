@@ -15,7 +15,7 @@ export default async function Home() {
   await sleep(2000)
   
   return (
-    <main className=" " >
+    <main className="py-12 " >
       <Hero />
       <About />
       <WhyAlmaysaroh />
