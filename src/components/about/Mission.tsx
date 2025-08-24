@@ -19,7 +19,7 @@ export default function Mission() {
           <Description className="font-semibold text-lg">
             To make Qur’ān learning accessible, engaging, and effective through
             online and physical classes. We aim to build a supportive Islamic
-            community through modern, flexible learning methods where
+            community through modern and flexible learning methods where
             learners can thrive spiritually and academically.
           </Description>
         </div>

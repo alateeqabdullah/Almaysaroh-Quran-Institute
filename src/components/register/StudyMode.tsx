@@ -87,7 +87,7 @@ const tallyUrl = "https://tally.so/r/3jRMva";
             <iframe
               src={finalUrl}
               width="100%"
-              height="600"
+              height="900`"
               frameBorder="0"
               title="Registration Form"
             ></iframe>

@@ -7,6 +7,7 @@ import {
   DEFAULT_WEEKS_PER_MONTH,
 } from "@/config/pricing";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 
 const dayModes = ["online", "day", "boarding"];
@@ -115,21 +116,19 @@ export default  function PricingPage({ slug }) {
                       {monthlyOnlinePrice.toLocaleString()}
                     </div>
                     <div className="text-xs text-gray-500">
-                      {daysPerWeek}×/week × {DEFAULT_WEEKS_PER_MONTH} weeks × ₦
-                      {ONLINE_RATE_PER_SESSION_NGN[minutes].toLocaleString()}{" "}
-                      per session
+                      {daysPerWeek} day(s) / week × {DEFAULT_WEEKS_PER_MONTH} weeks
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="mt-5">
-                <a
+                <Link
                   href="https://tally.so/r/your-form-id" // ← replace with your real Tally form link
                   className="inline-block bg-emerald-600 text-white px-5 py-3 rounded-xl hover:bg-emerald-700"
                 >
                   Enroll / Request Schedule
-                </a>
+                </Link>
               </div>
             </div>
           )}
