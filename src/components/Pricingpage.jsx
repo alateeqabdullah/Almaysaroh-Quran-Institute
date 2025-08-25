@@ -32,7 +32,7 @@ export default  function PricingPage({ slug }) {
   }
 
   return (
-    <section className="min-h-screen bg-emerald-50 py-50">
+    <section className="min-h-screen bg-bg pb-16">
       <div className="max-w-4xl mx-auto px-6">
         <h1 className="text-2xl md:text-3xl font-bold text-emerald-900">
           Pricing — {program.name}
@@ -124,7 +124,7 @@ export default  function PricingPage({ slug }) {
 
               <div className="mt-5">
                 <Link
-                  href="https://tally.so/r/your-form-id" // ← replace with your real Tally form link
+                  href="https://tally.so/r/nr4X8N"
                   className="inline-block bg-emerald-600 text-white px-5 py-3 rounded-xl hover:bg-emerald-700"
                 >
                   Enroll / Request Schedule
@@ -140,27 +140,7 @@ export default  function PricingPage({ slug }) {
                 Physical (Day) Fees
               </h2>
 
-              {/* Murõja’ah: simple two rows */}
-              {isMurajaah ? (
-                <ul className="mt-4 space-y-2 text-gray-700">
-                  {program.physical.partTime && (
-                    <li className="flex justify-between border-b border-emerald-50 pb-2">
-                      <span>Part-time (Day)</span>
-                      <span className="font-semibold text-emerald-700">
-                        {program.physical.partTime}
-                      </span>
-                    </li>
-                  )}
-                  {program.physical.fullTime && (
-                    <li className="flex justify-between pt-2">
-                      <span>Full-time (Day)</span>
-                      <span className="font-semibold text-emerald-700">
-                        {program.physical.fullTime}
-                      </span>
-                    </li>
-                  )}
-                </ul>
-              ) : (
+             
                 <ul className="mt-4 space-y-2 text-gray-700">
                   {program.physical.partTimeDay && (
                     <li className="flex justify-between border-b border-emerald-50 pb-2">
@@ -179,12 +159,12 @@ export default  function PricingPage({ slug }) {
                     </li>
                   )}
                 </ul>
-              )}
+           
             </div>
           )}
 
           {/* PHYSICAL BOARDING */}
-          {mode === "boarding" && !isMurajaah && (
+          {mode === "boarding" && (
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-emerald-100">
               <h2 className="text-xl font-semibold text-emerald-800">
                 Physical (Boarding) Fees
@@ -220,19 +200,19 @@ export default  function PricingPage({ slug }) {
           )}
 
           {/* Murõja’ah has no boarding block */}
-          {mode === "boarding" && isMurajaah && (
+          {/* {mode === "boarding" && isMurajaah && (
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-emerald-100">
               <p className="text-gray-700">
                 Boarding pricing is not applicable for Murõja’ah. Please choose{" "}
                 <b>Online</b> or <b>Physical (Day)</b>.
               </p>
             </div>
-          )}
+          )} */}
         </div>
 
         <div className="mt-8">
           <a
-            href="https://tally.so/r/your-form-id" // ← replace with your real Tally form link
+            href="https://tally.so/r/nr4X8N" 
             className="inline-block bg-emerald-600 text-white px-5 py-3 rounded-xl hover:bg-emerald-700"
           >
             Enroll Now

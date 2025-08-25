@@ -16,7 +16,7 @@
 //   }[];
 // };
 
-import { BookAlert, BookAlertIcon, BookCheck, BookCopy, BookOpen, BookOpenCheck, GraduationCap, PenTool } from "lucide-react";
+// import { BookAlert, BookAlertIcon, BookCheck, BookCopy, BookOpen, BookOpenCheck, GraduationCap, PenTool } from "lucide-react";
 
 // export const programs: Program[] = [
 //   {
@@ -211,6 +211,14 @@ import { BookAlert, BookAlertIcon, BookCheck, BookCopy, BookOpen, BookOpenCheck,
 
 // data/programs.ts
 
+ import {
+   BookAlertIcon,
+   BookCheck,
+   BookOpen,
+   BookOpenCheck,
+   PenTool,
+ } from "lucide-react";
+
 export type FeedingOption = {
   partTime?: string;
   fullTime?: string;
@@ -375,6 +383,12 @@ export const programs: Program[] = [
     physical: {
       partTimeDay: "₦5,000",
       fullTimeDay: "₦10,000",
+      partTimeBoarding: "₦20,000",
+      fullTimeBoarding: "₦40,000",
+      feeding: {
+        partTime: "₦16,000",
+        fullTime: "₦60,000",
+      },
     },
   },
   {
