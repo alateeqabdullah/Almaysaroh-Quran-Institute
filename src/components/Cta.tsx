@@ -21,7 +21,7 @@ export default function CTA() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="bg-white shadow-lg rounded-sm mb-4 border border-green-200 hover:shadow-xl hover:border-green-400 transition-all"
+                className=" shadow-lg rounded-sm mb-4 hover:shadow-xl hover:border-green-400 transition-all"
               >
         <Description
           className="text-lg md:text-xl pt-6 mb-8 text-green-700  "
