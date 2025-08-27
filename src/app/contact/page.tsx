@@ -1,4 +1,3 @@
-
 import H2 from "@/components/H2";
 import ContactForm from "@/components/ui/ContactForm";
 import GoogleMap from "@/components/ui/GoogleMap";
@@ -21,7 +20,7 @@ export default async function ContactPage() {
           <div className="space-y-6">
             <div className="flex items-center gap-4">
               <Phone className="w-6 h-6 text-emerald-600" />
-              <p className="text-gray-700">+234 801 234 5678</p>
+              <p className="text-gray-700">+2348185300293</p>
             </div>
             <div className="flex items-center gap-4">
               <Mail className="w-6 h-6 text-emerald-600" />

@@ -30,7 +30,7 @@ export default function ContactSection() {
               Our Location
             </h3>
             <p className="text-center">
-              Al-Maysaroh Quran Institute, Ibadan, Oyo, Nigeria
+              Idi-Ose Moniya Express, Ibadan, Oyo State, Nigeria.
             </p>
           </motion.div>
 
@@ -65,7 +65,6 @@ export default function ContactSection() {
 
         {/* Optional Map */}
         <div className="mt-12">
-     
           {/* Google Maps Embed */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -93,5 +92,3 @@ export default function ContactSection() {
     </section>
   );
 }
-
-
