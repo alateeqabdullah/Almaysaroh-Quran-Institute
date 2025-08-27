@@ -16,25 +16,25 @@ type Teacher = {
 const teachers: Teacher[] = [
   {
     name: "Ustadh Abubakar Abdurrozzaq",
-    title: "Qirā’ah Instructor",
+    title: "Qirā’aat Instructor",
     image: "/teachers/abubakar.jpeg",
-    bio: "Certified Qur’an teacher with 15 years of experience teaching Tajweed and Qirā’ah.",
+    bio: "Certified Qur’an teacher with 12 years of experience teaching Quran, Qirā’ah, Tajweed and Qirā’aat.",
   },
   {
     name: "Ustadhah Faatimah Alagbada",
-    title: "Tahfeedh Instructor",
+    title: "Qur'an Instructor",
     image: "/teachers/fatimah-alagbada.jpeg",
-    bio: "Expert in memorization (Tahfeedh) with personalized student guidance.",
+    bio: "Expert in Qirā’ah and memorization (Tahfeedh) with personalized student guidance.",
   },
   {
     name: "Ustadh 'Aliyyu 'Abdurrozzaq ",
-    title: "Tajweed Instructor",
+    title: "Qur'an Instructor",
     image: "/teachers/aliyyu-abdurrozzaq.jpeg",
     bio: "Specializes in Tajweed rules, ensuring accurate and fluent recitation.",
   },
   {
     name: "Ustadhah Robee'ah Abdurrozzaq",
-    title: "Qirā’aat Instructor",
+    title: "Qur'an Instructor",
     image: "/teachers/robeeah.png",
     bio: "Experienced in teaching multiple Qirā’aat, focusing on pronunciation and rhythm.",
   },

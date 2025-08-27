@@ -20,7 +20,7 @@ export default  function PricingPage({ slug }) {
   const [daysPerWeek, setDaysPerWeek] = useState(3);
   const [minutes, setMinutes] = useState(30);
 
-  const isMurajaah = program?.slug === "murojaah";
+  // const isMurajaah = program?.slug === "murojaah";
 
   const monthlyOnlinePrice = useMemo(() => {
     const perSession = ONLINE_RATE_PER_SESSION_NGN[minutes];
