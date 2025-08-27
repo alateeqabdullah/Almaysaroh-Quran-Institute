@@ -10,7 +10,7 @@ export default function CTA() {
     <section className="relative py-20 bg-green-800 text-white text-center">
       <div className="max-w-3xl mx-auto px-4">
         <H2
-          className="text-4xl md:text-5xl mb-6"
+          className="text-4xl text-yellow-400 md:text-5xl mb-6"
         
         >
           Begin Your Qur’an Journey Today
@@ -21,10 +21,10 @@ export default function CTA() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="bg-white shadow-lg rounded-sm mb-4 border border-green-200 hover:shadow-xl hover:border-green-400 transition-all"
+                className=" rounded-sm mb-4 border  hover:border-yellow-400 transition-all"
               >
         <Description
-          className="text-lg md:text-xl pt-6 mb-8 text-green-700  "
+          className="text-lg md:text-xl pt-6 mb-8 text-white "
           
           >
           Enroll now and join hundreds of students learning the Qur’an with

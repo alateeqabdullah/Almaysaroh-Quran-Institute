@@ -10,8 +10,8 @@ export default function Events() {
   return (
     <section className="py-20 bg-yellow-600 ">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <H2 className="text-black ">Upcoming Events</H2>
-        <Description className=" text-white mb-12 ">
+        <H2 className="text-surface ">Upcoming Events</H2>
+        <Description className=" text-gray-700 mb-12 ">
           Join our upcoming programs and events designed to help students
           advance in their Qur’an learning journey.
         </Description>
