@@ -7,11 +7,9 @@ import Description from "@/components/Description";
 import H2 from "@/components/H2";
 import H3 from "@/components/H3";
 import Span from "@/components/Span";
-import { sleep } from "@/lib/utils";
 
 // components/AboutIntro.tsx
 export default async function About() {
-  await sleep(2000)
   
   return (
     <main className="px-6 text-center  ">

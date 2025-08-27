@@ -2,12 +2,9 @@
 import H2 from "@/components/H2";
 import ContactForm from "@/components/ui/ContactForm";
 import GoogleMap from "@/components/ui/GoogleMap";
-import { sleep } from "@/lib/utils";
-import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, MessageSquarePlus } from "lucide-react";
 
 export default async function ContactPage() {
-  await sleep(2000)
   return (
     <section className="min-h-screen pb-20">
       <div className="max-w-6xl mx-auto px-6">

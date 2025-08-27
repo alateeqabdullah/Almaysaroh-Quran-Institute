@@ -17,25 +17,25 @@ const teachers: Teacher[] = [
   {
     name: "Ustadh Abubakar Abdurrozzaq",
     title: "Qirā’ah Instructor",
-    image: "/teachers/abubakar.jpg",
+    image: "/teachers/abubakar.jpeg",
     bio: "Certified Qur’an teacher with 15 years of experience teaching Tajweed and Qirā’ah.",
   },
   {
     name: "Ustadhah Faatimah Alagbada",
     title: "Tahfeedh Instructor",
-    image: "/teachers/fatimah-alagbada.jpg",
+    image: "/teachers/fatimah-alagbada.jpeg",
     bio: "Expert in memorization (Tahfeedh) with personalized student guidance.",
   },
   {
     name: "Ustadh 'Aliyyu 'Abdurrozzaq ",
     title: "Tajweed Instructor",
-    image: "/teachers/aliyyu-abdurrozzaq.jpg",
+    image: "/teachers/aliyyu-abdurrozzaq.jpeg",
     bio: "Specializes in Tajweed rules, ensuring accurate and fluent recitation.",
   },
   {
     name: "Ustadhah Robee'ah Abdurrozzaq",
     title: "Qirā’aat Instructor",
-    image: "/teachers/abubakar.jpg",
+    image: "/teachers/robeeah.png",
     bio: "Experienced in teaching multiple Qirā’aat, focusing on pronunciation and rhythm.",
   },
 ];
