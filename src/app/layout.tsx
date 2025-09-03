@@ -35,7 +35,7 @@ export default function RootLayout({
       >
         <NProgressProvider />
         <Navbar />
-        <main className="grow mt-40 ">{children}</main>
+        <main className="grow pt-40 ">{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>

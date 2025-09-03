@@ -208,16 +208,15 @@
 //   return programs.find((p) => p.slug === slug);
 // }
 
-
 // data/programs.ts
 
- import {
-   BookAlertIcon,
-   BookCheck,
-   BookOpen,
-   BookOpenCheck,
-   PenTool,
- } from "lucide-react";
+import {
+  BookAlertIcon,
+  BookCheck,
+  BookOpen,
+  BookOpenCheck,
+  PenTool,
+} from "lucide-react";
 
 export type FeedingOption = {
   partTime?: string;
@@ -264,13 +263,13 @@ export const programs: Program[] = [
       "Commitment to daily practice",
     ],
     online: {
-      note: "Flexible — choose number of days per week or month, and class duration (30, 45, or 60 minutes). Pricing adjusts accordingly.",
+      note: "Flexible — choose number of days per week and month, and class duration (30, 45, or 60 minutes). Pricing adjusts accordingly.",
     },
     physical: {
-      partTimeDay: "₦3,000 (Weekend: Sat–Sun, 9am–4pm)",
-      fullTimeDay: "₦5,000 (Weekend 9am–4pm + Mon–Wed 4pm–6:30pm)",
-      partTimeBoarding: "₦10,000 (Fri 4pm – Sun 4pm)",
-      fullTimeBoarding: "₦20,000 (Everyday boarding)",
+      partTimeDay: " (Weekend: Sat–Sun, 9am–4pm)",
+      fullTimeDay: "(Weekend 9am–4pm + Mon–Wed 4pm–6:30pm)",
+      partTimeBoarding: "(Fri 4pm – Sun 4pm)",
+      fullTimeBoarding: "(Everyday boarding)",
       feeding: {
         partTime: "₦16,000",
         fullTime: "₦60,000",
@@ -354,8 +353,8 @@ export const programs: Program[] = [
       note: "Scheduled advanced sessions only.",
     },
     physical: {
-      partTimeDay: "₦3,000",
-      fullTimeDay: "₦5,000",
+      partTimeDay: "₦5,000",
+      fullTimeDay: "₦10,000",
       partTimeBoarding: "₦10,000",
       fullTimeBoarding: "₦20,000",
       feeding: {
@@ -383,8 +382,8 @@ export const programs: Program[] = [
     physical: {
       partTimeDay: "₦5,000",
       fullTimeDay: "₦10,000",
-      partTimeBoarding: "₦20,000",
-      fullTimeBoarding: "₦40,000",
+      partTimeBoarding: "₦10,000",
+      fullTimeBoarding: "₦20,000",
       feeding: {
         partTime: "₦16,000",
         fullTime: "₦60,000",
@@ -410,9 +409,9 @@ export const programs: Program[] = [
     },
     physical: {
       partTimeDay: "₦5,000",
-      fullTimeDay: "₦15,000",
-      partTimeBoarding: "₦20,000",
-      fullTimeBoarding: "₦40,000",
+      fullTimeDay: "₦10,000",
+      partTimeBoarding: "₦10,000",
+      fullTimeBoarding: "₦20,000",
       feeding: {
         partTime: "₦16,000",
         fullTime: "₦60,000",
@@ -422,17 +421,9 @@ export const programs: Program[] = [
 ];
 
 
- export function getProgramBySlug(slug: string): Program | undefined {
-   return programs.find((p) => p.slug === slug);
- }
-
-
-
-
-
-
-
-
+export function getProgramBySlug(slug: string): Program | undefined {
+  return programs.find((p) => p.slug === slug);
+}
 
 // // data/programs.ts
 // export const programs = [
@@ -537,4 +528,3 @@ export const programs: Program[] = [
 //     physicalBoardingPricing: "₦45,000 per term (Boarding)",
 //   },
 // ];
-

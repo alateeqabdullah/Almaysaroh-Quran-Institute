@@ -7,7 +7,7 @@ import { BookOpen } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-emerald-50 to-white px-6 pt-50 pb-16 text-center">
+    <section className="flex flex-col items-center justify-center bg-gradient-to-br from-emerald-50 to-white px-6 pb-16 text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

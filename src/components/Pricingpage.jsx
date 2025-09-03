@@ -20,7 +20,7 @@ export default  function PricingPage({ slug }) {
   const [daysPerWeek, setDaysPerWeek] = useState(3);
   const [minutes, setMinutes] = useState(30);
 
-  // const isMurajaah = program?.slug === "murojaah";
+  const isMurajaah = program?.slug === "murojaah";
 
   const monthlyOnlinePrice = useMemo(() => {
     const perSession = ONLINE_RATE_PER_SESSION_NGN[minutes];
@@ -133,8 +133,10 @@ export default  function PricingPage({ slug }) {
             </div>
           )}
 
-          {/* PHYSICAL DAY */}
-          {mode === "day" && (
+          
+       
+       
+           {mode === "day" && (
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-emerald-100">
               <h2 className="text-xl font-semibold text-emerald-800">
                 Physical (Day) Fees
@@ -163,7 +165,7 @@ export default  function PricingPage({ slug }) {
             </div>
           )}
 
-          {/* PHYSICAL BOARDING */}
+   
           {mode === "boarding" && (
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-emerald-100">
               <h2 className="text-xl font-semibold text-emerald-800">
@@ -199,6 +201,7 @@ export default  function PricingPage({ slug }) {
             </div>
           )}
 
+          
           {/* Murõja’ah has no boarding block */}
           {/* {mode === "boarding" && isMurajaah && (
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-emerald-100">
@@ -207,7 +210,7 @@ export default  function PricingPage({ slug }) {
                 <b>Online</b> or <b>Physical (Day)</b>.
               </p>
             </div>
-          )} */}
+          )}  */}
         </div>
 
         <div className="mt-8">

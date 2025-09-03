@@ -2,13 +2,13 @@
 // app/programs/[slug]/page.tsx
 "use client";
 
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import { programs } from "@/data/programs";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 
 export default function ProgramDetailsPage() {
   const { slug } = useParams();
-  const router = useRouter();
+  // const router = useRouter();
 
   const program = programs.find((p) => p.slug === slug);
 
