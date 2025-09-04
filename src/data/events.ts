@@ -1,7 +1,29 @@
+import { BookOpen } from "lucide-react";
+
 type Events = {
   title: string;
   date: string;
   description: string;
+};
+
+export type Eventss = {
+  slug: string;
+  icon: React.ElementType;
+  title: string;
+  subtitle: string;
+  desc: string;
+  mode: string;
+  duration: string;
+  cta: string;
+  formLink: string;
+  details: {
+    about: string;
+    learn: string[];
+    highlights: string[];
+    schedule: string[];
+    fees: string;
+  };
+  availability: boolean;
 };
 
 export const events: Events[] = [
@@ -25,17 +47,17 @@ export const events: Events[] = [
   },
 ];
 
-
-
 // lib/events.ts
-export const eventss = [
+export const eventss: Eventss[] = [
   {
     slug: "nurul-bayan",
-    title: "🌿 Qur’ān Reading Mastery",
-    subtitle: "Nūr al-Bayān Method",
+    icon: BookOpen,
+
+    title: "Qur’ān Reading Mastery",
+    subtitle: "Nūrul-Bayān Method",
     desc: "Build confidence, clarity, and fluency in Qur’ān reading step by step — from letters to full words.",
     duration: "4 Months",
-    mode: "Online (Zoom + WhatsApp)",
+    mode: "Online (Meet + WhatsApp)",
     cta: "Register Now",
     formLink: "https://tally.so/r/mO6gRk",
     details: {
@@ -56,21 +78,22 @@ export const eventss = [
         "Certification: Almaysaroh Qur’ān Institute",
       ],
       schedule: [
-        "3 classes per week",
+        "2-3 classes per week",
         "Each session: 1 hour",
         "Weekly practice tasks with feedback",
       ],
       fees: "Affordable, with Paystack, bank transfer or WhatsApp arrangement",
     },
-    availability: "true",
+    availability: true,
   },
   {
-    slug: "tajweed-refresh",
-    title: "🎤 Tajwīd Refresher Course",
+    slug: "tajweed01",
+    icon: BookOpen,
+    title: "Beginner Tajweed Course",
     subtitle: "Improve fluency & precision",
     desc: "Revise Tajwīd rules, correct common mistakes, and gain confidence to recite with clarity.",
     duration: "6 Weeks",
-    mode: "Online (Zoom + Telegram)",
+    mode: "Online (Meet + WhatsApp)",
     cta: "Join the Class",
     formLink: "https://tally.so/r/mO6gRk",
 
@@ -90,15 +113,46 @@ export const eventss = [
       schedule: ["Twice a week", "1 hour per session"],
       fees: "Affordable short programme",
     },
-    availability: "true",
+    availability: false,
+  },
+  {
+    slug: "tajweed02",
+    icon: BookOpen,
+    title: "Advanced Tajweed Course",
+    subtitle: "Improve fluency & precision",
+    desc: "Revise Tajwīd rules, correct common mistakes, and gain confidence to recite with clarity.",
+    duration: "6 Weeks",
+    mode: "Online (Meet + WhatsApp)",
+    cta: "Join the Class",
+    formLink: "https://tally.so/r/mO6gRk",
+
+    details: {
+      about:
+        "A focused short programme for learners who already read Qur’ān but need to polish their Tajwīd...",
+      learn: [
+        "Review of major Tajwīd rules",
+        "Correction of common mistakes",
+        "Practical recitation exercises",
+      ],
+      highlights: [
+        "Duration: 6 Weeks",
+        "Mode: Online",
+        "Certificate available",
+      ],
+      schedule: ["Twice a week", "1 hour per session"],
+      fees: "Affordable short programme",
+    },
+    availability: false,
   },
   {
     slug: "ramadan-special",
-    title: "🌙 Ramadan Qur’ān Bootcamp",
+    icon: BookOpen,
+
+    title: "Ramadan Qur’ān Bootcamp",
     subtitle: "Seasonal Programme",
     desc: "Special short-term course designed to prepare your recitation and connection with the Qur’ān for Ramadan.",
     duration: "1 Month",
-    mode: "Online + Extra Practice",
+    mode: "Online (Meet + WhatsApp)",
     cta: "Enroll Now",
     formLink: "https://tally.so/r/mO6gRk",
 
@@ -118,6 +172,6 @@ export const eventss = [
       schedule: ["Daily short sessions", "Optional group practice"],
       fees: "Special seasonal discount",
     },
-    availability: "true",
+    availability: false,
   },
 ];

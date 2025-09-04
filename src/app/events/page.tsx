@@ -5,56 +5,74 @@ import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { eventss } from "@/data/events";
+import H2 from "@/components/H2";
+import H3 from "@/components/H3";
+import Description from "@/components/Description";
+import { Clock } from "lucide-react";
 
 export default function EventsPage() {
   return (
     <section className="bg-green-50 py-12 px-4 md:px-12">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="max-w-5xl mx-auto"
-      >
-        <div className="text-center mb-10">
-          <h1 className="text-3xl font-bold text-green-700">
-            📅 Upcoming Courses & Events
-          </h1>
-          <p className="text-gray-600 mt-2">
-            Explore our seasonal Qur’ān programmes and register today.
-          </p>
-        </div>
+      <main className="text-center mb-10">
+        <H2 className="text-3xl font-bold text-green-800 mb-8">
+          Upcoming Events
+        </H2>
+        <Description className="text-gray-600 mt-2">
+          Explore our seasonal Qur’aan programmes and register today.
+        </Description>
+      </main>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {eventss.map((event) => (
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-center  ">
+        {eventss.map((event) => {
+          const Icon = event.icon;
+          return (
             <Card
               key={event.slug}
-              className="rounded-2xl shadow-md hover:shadow-lg transition"
+              className={`bg-white rounded-2xl pt-10 p-6 shadow-md border border-green-100 hover:shadow-lg hover:border-green-400 transition duration-300`}
             >
-              <CardHeader>
-                <CardTitle className="text-green-700">{event.title}</CardTitle>
+              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-green-100 text-green-700 mx-auto">
+                <Icon size={28} />
+              </div>
+              <CardHeader className=" text-center ">
+                <CardTitle className="text-xl font-semibold text-emerald-800">
+                  {event.title}
+                </CardTitle>
                 <p className="text-sm text-gray-500">{event.subtitle}</p>
               </CardHeader>
-              <CardContent>
-                <p className="text-gray-700 mb-3">{event.desc}</p>
-                <ul className="text-sm text-gray-600 mb-4">
-                  <li>
-                    <strong>Duration:</strong> {event.duration}
-                  </li>
-                  <li>
-                    <strong>Mode:</strong> {event.mode}
-                  </li>
-                </ul>
-                <Button
-                  asChild
-                  className="bg-green-600 hover:bg-green-700 text-white w-full rounded-xl"
-                >
-                  <Link href={`/events/${event.slug}`}>View Details</Link>
-                </Button>
-              </CardContent>
+
+              {event.availability ? (
+                
+                  <CardContent>
+                    <p className="text-gray-600 mt-2 line-clamp-3">
+                      {event.desc}
+                    </p>
+                    <ul className="text-sm text-gray-600 my-4">
+                      <li>
+                        <strong>Duration:</strong> {event.duration}
+                      </li>
+                      <li>
+                        <strong>Mode:</strong> {event.mode}
+                      </li>
+                    </ul>
+                    <Button
+                      asChild
+                      className="bg-green-600 hover:bg-green-700 text-white w-full rounded-xl"
+                    >
+                      <Link href={`/events/${event.slug}`}>View Details</Link>
+                    </Button>
+                  </CardContent>
+               
+              ) : (
+               
+              <div className=" my-4 text-center ">
+                <Clock className="w-8 h-8 text-gray-400 mx-auto mb-4" />
+                <p className=" font-medium text-gray-500 ">Coming Soon</p>
+              </div>
+              )}
             </Card>
-          ))}
-        </div>
-      </motion.div>
+          );
+        })}
+      </div>
     </section>
   );
 }
