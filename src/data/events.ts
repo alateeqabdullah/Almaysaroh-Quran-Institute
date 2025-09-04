@@ -79,7 +79,7 @@ export const eventss: Eventss[] = [
       ],
       schedule: [
         "2-3 classes per week",
-        "Each session: 1 hour",
+        "Each session: 30mins - 1 hour",
         "Weekly practice tasks with feedback",
       ],
       fees: "Affordable, with Paystack, bank transfer or WhatsApp arrangement",
