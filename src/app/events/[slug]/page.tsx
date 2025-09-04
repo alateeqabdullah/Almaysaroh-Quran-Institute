@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { eventss } from "@/data/events";
 import Span from "@/components/Span";
 import Link from "next/link";
+import NotFound from "@/app/not-found";
 
 export default async function EventPage({
   params,
@@ -19,11 +20,12 @@ export default async function EventPage({
     <section className="bg-green-50 pb-12 px-4 md:px-12">
       {event.availability ? (
         <Span className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold text-green-700 mb-2">
+          <h1 className="text-3xl font-bold text-green-700 text-center mb-2">
             {event.title}
           </h1>
-          <p className="text-gray-600 mb-6">{event.subtitle}</p>
+          <p className="text-gray-600 text-center mb-6">{event.subtitle}</p>
 
+          
           {/* About */}
           <Card className="mb-6 rounded-2xl shadow-md">
             <CardContent className="p-6">
@@ -110,7 +112,7 @@ export default async function EventPage({
           </div>
         </Span>
       ) : (
-        "how"
+        <NotFound />
       )}
     </section>
   );
