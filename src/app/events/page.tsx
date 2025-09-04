@@ -10,7 +10,7 @@ import { Clock } from "lucide-react";
 
 export default function EventsPage() {
   return (
-    <section className="bg-green-50 py-12 px-4 md:px-12">
+    <section className="bg-green-50 px-4 md:px-12">
       <main className="text-center mb-10">
         <H2 className="text-3xl font-bold text-green-800 mb-8">
           Upcoming Events

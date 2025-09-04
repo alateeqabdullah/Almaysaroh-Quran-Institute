@@ -16,8 +16,6 @@
 //   }[];
 // };
 
-
-
 import {
   BookAlertIcon,
   BookCheck,
@@ -236,8 +234,10 @@ export const programs: Program[] = [
     description:
       "A comprehensive Islamic learning program designed for students who want to cover all aspects — Qirõ’ah, Tajweed, Tahfeedh,Qirõ’aat and more — in an intensive format.",
     outline: [
+      "Qirõ’ah foundations",
       "Qur’an recitation (Qirõ’ah & Tajweed)",
       "Tahfeedh (Memorization)",
+      "Qirõ’aat overview",
     ],
     requirements: ["Serious commitment", "Full-time availability"],
     online: {
