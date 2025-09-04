@@ -16,199 +16,7 @@
 //   }[];
 // };
 
-// import { BookAlert, BookAlertIcon, BookCheck, BookCopy, BookOpen, BookOpenCheck, GraduationCap, PenTool } from "lucide-react";
 
-// export const programs: Program[] = [
-//   {
-//     slug: "quran-with-tajweed",
-//     title: "Qur’ān with Tajwīd",
-//     description: "Master proper recitation of the Qur’ān with tajwīd rules.",
-//     about:
-//       "This course focuses on the correct articulation of letters, pronunciation rules, and fluency in reciting the Qur’ān.",
-//     outline: [
-//       "Introduction to Tajwīd rules",
-//       "Makharij (points of articulation)",
-//       "Sifaat (characteristics of letters)",
-//       "Practical recitation sessions",
-//     ],
-//     requirements: [
-//       "Ability to read Arabic script",
-//       "Commitment to practice daily",
-//       "Notebook & pen",
-//     ],
-//     fees: [
-//       {
-//         days: 3,
-//         hours: 1,
-//         price: { usd: 30, eur: 28, ngn: 25000 },
-//       },
-//       {
-//         days: 5,
-//         hours: 1,
-//         price: { usd: 50, eur: 46, ngn: 42000 },
-//       },
-//     ],
-//   },
-//   {
-//     slug: "hifdh",
-//     title: "Ḥifdh (Memorization)",
-//     description: "Step-by-step memorization of the Holy Qur’ān with guidance.",
-//     about:
-//       "This program is designed for students who wish to memorize the Qur’ān entirely or partially, with revision and retention strategies.",
-//     outline: [
-//       "Daily new lesson (sabaq)",
-//       "Revision (murāja‘ah)",
-//       "Monthly assessments",
-//       "Completion certificates",
-//     ],
-//     requirements: [
-//       "Basic tajwīd knowledge",
-//       "Commitment to consistency",
-//       "Parental/guardian support (for children)",
-//     ],
-//     fees: [
-//       {
-//         days: 5,
-//         hours: 2,
-//         price: { usd: 100, eur: 95, ngn: 85000 },
-//       },
-//       {
-//         days: 6,
-//         hours: 3,
-//         price: { usd: 140, eur: 132, ngn: 120000 },
-//       },
-//     ],
-//   },
-// ];
-
-// /data/programs.ts
-// export type Feeding = { partTime: string; fullTime: string };
-// export type Physical = {
-//   partTimeDay?: string;
-//   fullTimeDay?: string;
-//   partTimeBoarding?: string;
-//   fullTimeBoarding?: string;
-//   feeding?: Feeding | null;
-//   // Murõja’ah special:
-//   partTime?: string;
-//   fullTime?: string;
-// };
-// export type Program = {
-//   slug: string;
-//   icon: React.ElementType;
-//   name: string;
-//   description: string;
-//   online: string;
-//   physical: Physical;
-// };
-
-// export const programs: Program[] = [
-//   {
-//     slug: "qiraah",
-//     icon: BookOpen,
-//     name: "Qirõ'ah",
-//     description:
-//       "Focuses on mastering the correct recitation of the Qur’an with emphasis on phonetics and articulation. Students will learn the proper way to pronounce each letter and word.",
-//     outline: [
-//        "Introduction to Makharij al-Huruf",
-//        "Rules of Recitation",
-//        "Correcting Common Mistakes",
-//        "Practical Recitations with Teacher",
-//      ],
-//     physical: {
-//       partTimeDay: "₦3,000 (Weekend: Sat–Sun, 9am–4pm)",
-//       fullTimeDay: "₦5,000 (Weekend 9am–4pm + Mon–Wed 4pm–6:30pm)",
-//       partTimeBoarding: "₦10,000 (Fri 4pm – Sun 4pm)",
-//       fullTimeBoarding: "₦20,000 (Everyday boarding)",
-//       feeding: { partTime: "₦16,000", fullTime: "₦60,000" },
-//     },
-//   },
-//   {
-//     slug: "tajweed",
-//     name: "Tajweed",
-//     icon: BookOpen,
-
-//     description:
-//       "Dedicated to learning the rules of Tajweed to ensure proper Qur’anic recitation with precision and beauty. Includes practical recitations and corrections.",
-//     online: { note: "Flexible — pay per duration and days selected." },
-//     physical: {
-//       partTimeDay: "₦3,000",
-//       fullTimeDay: "₦5,000",
-//       partTimeBoarding: "₦10,000",
-//       fullTimeBoarding: "₦20,000",
-//       feeding: { partTime: "₦16,000", fullTime: "₦60,000" },
-//     },
-//   },
-//   {
-//     slug: "tahfeedh",
-//     name: "Tahfeedh",
-//     icon: PenTool,
-
-//     description:
-//       "Designed for students who want to memorize the Qur’an. Emphasis on consistency, revision, and proper memorization techniques.",
-//     online: { note: "Flexible — structured per duration and number of days." },
-//     physical: {
-//       partTimeDay: "₦3,000",
-//       fullTimeDay: "₅,000",
-//       partTimeBoarding: "₁0,000",
-//       fullTimeBoarding: "ₒ20,000",
-//       feeding: { partTime: "₦16,000", fullTime: "₦60,000" },
-//     },
-//   },
-//   {
-//     slug: "qiroaat",
-//     name: "Qirõ’aat",
-//     icon: BookCopy,
-
-//     description:
-//       "Specialized program for learning the ten recognized modes of Qur’anic recitation (Qirõ’aat). Guided practice and application.",
-//     online: { note: "Flexible — structured pricing per mode and duration." },
-//     physical: {
-//       partTimeDay: "₦3,000",
-//       fullTimeDay: "₦5,000",
-//       partTimeBoarding: "₦10,000",
-//       fullTimeBoarding: "₦20,000",
-//       feeding: { partTime: "₦16,000", fullTime: "₦60,000" },
-//     },
-//   },
-//   {
-//     slug: "murojaah",
-//     name: "Murõja’ah",
-//     icon: GraduationCap,
-
-//     description:
-//       "Revision program for those who have memorized portions of the Qur’an — strengthens retention, fluency, and accuracy.",
-//     online: { note: "Flexible — available per session or monthly." },
-//     physical: {
-//       // Special: no feeding, flat rates
-//       partTime: "₦5,000",
-//       fullTime: "₦10,000",
-//       feeding: null,
-//     },
-//   },
-//   {
-//     slug: "intensive-taleem",
-//     name: "Intensive Ta’leem",
-//     icon: BookAlert,
-
-//     description:
-//       "An all-in-one intensive program: recitation, Tajweed, memorization, and Islamic studies in a structured curriculum.",
-//     online: { note: "Flexible — pay based on selected subjects and duration." },
-//     physical: {
-//       partTimeDay: "₦4,000",
-//       fullTimeDay: "₦7,000",
-//       partTimeBoarding: "₦12,000",
-//       fullTimeBoarding: "₦25,000",
-//       feeding: { partTime: "₦18,000", fullTime: "₦65,000" },
-//     },
-//   },
-// ];
-
-// export function getProgramBySlug(slug: string): Program | undefined {
-//   return programs.find((p) => p.slug === slug);
-// }
-
-// data/programs.ts
 
 import {
   BookAlertIcon,
@@ -228,6 +36,10 @@ export type PhysicalOptions = {
   fullTimeDay: string;
   partTimeBoarding?: string;
   fullTimeBoarding?: string;
+  partTimeDays: string;
+  fullTimeDays: string;
+  partTimeBoardings?: string;
+  fullTimeBoardings?: string;
   feeding?: FeedingOption;
 };
 
@@ -266,10 +78,14 @@ export const programs: Program[] = [
       note: "Flexible — choose number of days per week and month, and class duration (30, 45, or 60 minutes). Pricing adjusts accordingly.",
     },
     physical: {
-      partTimeDay: " (Weekend: Sat–Sun, 9am–4pm)",
-      fullTimeDay: "(Weekend 9am–4pm + Mon–Wed 4pm–6:30pm)",
-      partTimeBoarding: "(Fri 4pm – Sun 4pm)",
-      fullTimeBoarding: "(Everyday boarding)",
+      partTimeDay: "₦3,000",
+      fullTimeDay: "₦5,000",
+      partTimeBoarding: "₦10,000",
+      fullTimeBoarding: "₦20,000",
+      partTimeDays: " (Weekend: Sat–Sun, 9am–4pm)",
+      fullTimeDays: "(Weekend: 9am–4pm + Mon–Wed: 4pm–6:30pm)",
+      partTimeBoardings: "(Fri: 4pm – Sun: 4pm)",
+      fullTimeBoardings: "(Everyday boarding)",
       feeding: {
         partTime: "₦16,000",
         fullTime: "₦60,000",
@@ -283,11 +99,15 @@ export const programs: Program[] = [
     description:
       "Dedicated to learning the rules of Tajweed to ensure proper Qur’anic recitation with precision and beauty. Includes practical recitations and corrections.",
     outline: [
+      "Introduction to Makharij al-Huruf",
+      "Rules of Recitation",
       "Introduction to Tajweed rules",
       "Makhaarij (points of articulation)",
       "Rules of Noon Saakin and Tanween",
       "Madd (elongation rules)",
       "Practice with selected Surahs",
+      "Correcting Common Mistakes",
+      "Practical Recitations with Teacher",
     ],
     requirements: ["Ability to read the Qur’an", "Willingness to be corrected"],
     online: {
@@ -298,6 +118,10 @@ export const programs: Program[] = [
       fullTimeDay: "₦5,000",
       partTimeBoarding: "₦10,000",
       fullTimeBoarding: "₦20,000",
+      partTimeDays: " (Weekend: Sat–Sun, 9am–4pm)",
+      fullTimeDays: "(Weekend: 9am–4pm + Mon–Wed: 4pm–6:30pm)",
+      partTimeBoardings: "(Fri: 4pm – Sun: 4pm)",
+      fullTimeBoardings: "(Everyday boarding)",
       feeding: {
         partTime: "₦16,000",
         fullTime: "₦60,000",
@@ -329,6 +153,10 @@ export const programs: Program[] = [
       fullTimeDay: "₦5,000",
       partTimeBoarding: "₦10,000",
       fullTimeBoarding: "₦20,000",
+      partTimeDays: " (Weekend: Sat–Sun, 9am–4pm)",
+      fullTimeDays: "(Weekend: 9am–4pm + Mon–Wed: 4pm–6:30pm)",
+      partTimeBoardings: "(Fri: 4pm – Sun: 4pm)",
+      fullTimeBoardings: "(Everyday boarding)",
       feeding: {
         partTime: "₦16,000",
         fullTime: "₦60,000",
@@ -357,6 +185,10 @@ export const programs: Program[] = [
       fullTimeDay: "₦10,000",
       partTimeBoarding: "₦10,000",
       fullTimeBoarding: "₦20,000",
+      partTimeDays: " (Weekend: Sat–Sun, 9am–4pm)",
+      fullTimeDays: "(Weekend: 9am–4pm + Mon–Wed: 4pm–6:30pm)",
+      partTimeBoardings: "(Fri: 4pm – Sun: 4pm)",
+      fullTimeBoardings: "(Everyday boarding)",
       feeding: {
         partTime: "₦16,000",
         fullTime: "₦60,000",
@@ -375,7 +207,10 @@ export const programs: Program[] = [
       "Error correction sessions",
       "Revision competitions",
     ],
-    requirements: ["Must have memorized at least Juz ‘Amma"],
+    requirements: [
+      "Must have memorized a portion of the Qur'an - at least Juz ‘Amma",
+      "Commitment to consistent review",
+    ],
     online: {
       note: "Flexible revision schedules available online.",
     },
@@ -384,6 +219,10 @@ export const programs: Program[] = [
       fullTimeDay: "₦10,000",
       partTimeBoarding: "₦10,000",
       fullTimeBoarding: "₦20,000",
+      partTimeDays: " (Weekend: Sat–Sun, 9am–4pm)",
+      fullTimeDays: "(Weekend: 9am–4pm + Mon–Wed: 4pm–6:30pm)",
+      partTimeBoardings: "(Fri: 4pm – Sun: 4pm)",
+      fullTimeBoardings: "(Everyday boarding)",
       feeding: {
         partTime: "₦16,000",
         fullTime: "₦60,000",
@@ -395,13 +234,10 @@ export const programs: Program[] = [
     name: "Intensive Ta’leem",
     icon: BookOpenCheck,
     description:
-      "A comprehensive Islamic learning program designed for students who want to cover all aspects — Qirõ’ah, Tajweed, Tahfeedh, Fiqh, and more — in an intensive format.",
+      "A comprehensive Islamic learning program designed for students who want to cover all aspects — Qirõ’ah, Tajweed, Tahfeedh,Qirõ’aat and more — in an intensive format.",
     outline: [
       "Qur’an recitation (Qirõ’ah & Tajweed)",
       "Tahfeedh (Memorization)",
-      "Fiqh (Islamic jurisprudence)",
-      "Aqeedah (Creed)",
-      "Seerah and Hadith",
     ],
     requirements: ["Serious commitment", "Full-time availability"],
     online: {
@@ -412,6 +248,10 @@ export const programs: Program[] = [
       fullTimeDay: "₦10,000",
       partTimeBoarding: "₦10,000",
       fullTimeBoarding: "₦20,000",
+      partTimeDays: " (Weekend: Sat–Sun, 9am–4pm)",
+      fullTimeDays: "(Weekend: 9am–4pm + Mon–Wed: 4pm–6:30pm)",
+      partTimeBoardings: "(Fri: 4pm – Sun: 4pm)",
+      fullTimeBoardings: "(Everyday boarding)",
       feeding: {
         partTime: "₦16,000",
         fullTime: "₦60,000",
@@ -419,7 +259,6 @@ export const programs: Program[] = [
     },
   },
 ];
-
 
 export function getProgramBySlug(slug: string): Program | undefined {
   return programs.find((p) => p.slug === slug);

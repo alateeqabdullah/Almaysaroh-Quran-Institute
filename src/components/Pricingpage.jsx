@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useMemo, useState } from "react";
 import { getProgramBySlug } from "@/data/programs";
@@ -9,12 +9,9 @@ import {
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-
 const dayModes = ["online", "day", "boarding"];
 
-
-
-export default  function PricingPage({ slug }) {
+export default function PricingPage({ slug }) {
   const program = getProgramBySlug(slug);
   const [mode, setMode] = useState("online");
   const [daysPerWeek, setDaysPerWeek] = useState(3);
@@ -95,9 +92,7 @@ export default  function PricingPage({ slug }) {
                   <select
                     className="mt-1 w-full rounded-lg border border-emerald-200 px-3 py-2 bg-white"
                     value={minutes}
-                    onChange={(e) =>
-                      setMinutes(Number(e.target.value) )
-                    }
+                    onChange={(e) => setMinutes(Number(e.target.value))}
                   >
                     {[30, 45, 60].map((m) => (
                       <option key={m} value={m}>
@@ -116,7 +111,8 @@ export default  function PricingPage({ slug }) {
                       {monthlyOnlinePrice.toLocaleString()}
                     </div>
                     <div className="text-xs text-gray-500">
-                      {daysPerWeek} day(s) / week × {DEFAULT_WEEKS_PER_MONTH} weeks
+                      {daysPerWeek} day(s) / week × {DEFAULT_WEEKS_PER_MONTH}{" "}
+                      weeks
                     </div>
                   </div>
                 </div>
@@ -133,39 +129,39 @@ export default  function PricingPage({ slug }) {
             </div>
           )}
 
-          
-       
-       
-           {mode === "day" && (
+          {mode === "day" && (
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-emerald-100">
               <h2 className="text-xl font-semibold text-emerald-800">
                 Physical (Day) Fees
               </h2>
 
-             
-                <ul className="mt-4 space-y-2 text-gray-700">
-                  {program.physical.partTimeDay && (
-                    <li className="flex justify-between border-b border-emerald-50 pb-2">
-                      <span>Part-time (Day)</span>
-                      <span className="font-semibold text-emerald-700">
-                        {program.physical.partTimeDay}
-                      </span>
-                    </li>
-                  )}
-                  {program.physical.fullTimeDay && (
-                    <li className="flex justify-between pt-2">
-                      <span>Full-time (Day)</span>
-                      <span className="font-semibold text-emerald-700">
-                        {program.physical.fullTimeDay}
-                      </span>
-                    </li>
-                  )}
-                </ul>
-           
+              <ul className="mt-4 space-y-2 text-gray-700">
+                {program.physical.partTimeDay && (
+                  <li className="flex justify-between border-b border-emerald-50 pb-2">
+                    <span>Part-time (Day)</span>
+                    <span className="font-semibold text-emerald-700">
+                      {program.physical.partTimeDays}
+                    </span>
+                    <span className="font-semibold text-emerald-700">
+                      {program.physical.partTimeDay}
+                    </span>
+                  </li>
+                )}
+                {program.physical.fullTimeDay && (
+                  <li className="flex justify-between pt-2">
+                    <span>Full-time (Day)</span>
+                    <span className="font-semibold text-emerald-700">
+                      {program.physical.fullTimeDays}
+                    </span>
+                    <span className="font-semibold text-emerald-700">
+                      {program.physical.fullTimeDay}
+                    </span>
+                  </li>
+                )}
+              </ul>
             </div>
           )}
 
-   
           {mode === "boarding" && (
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-emerald-100">
               <h2 className="text-xl font-semibold text-emerald-800">
@@ -176,13 +172,19 @@ export default  function PricingPage({ slug }) {
                   <li className="flex justify-between border-b border-emerald-50 pb-2">
                     <span>Part-time (Boarding)</span>
                     <span className="font-semibold text-emerald-700">
+                      {program.physical.partTimeBoardings}
+                    </span>
+                    <span className="font-semibold text-emerald-700">
                       {program.physical.partTimeBoarding}
                     </span>
                   </li>
                 )}
                 {program.physical.fullTimeBoarding && (
-                  <li className="flex justify-between pt-2">
+                  <li className="flex justify-between  border-b border-emerald-50 py-2">
                     <span>Full-time (Boarding)</span>
+                    <span className="font-semibold text-emerald-700">
+                      {program.physical.fullTimeBoardings}
+                    </span>
                     <span className="font-semibold text-emerald-700">
                       {program.physical.fullTimeBoarding}
                     </span>
@@ -192,8 +194,11 @@ export default  function PricingPage({ slug }) {
                   <li className="flex justify-between pt-2">
                     <span>Feeding (Boarding)</span>
                     <span className="font-semibold text-emerald-700">
-                      Part-time {program.physical.feeding.partTime} • Full-time{" "}
-                      {program.physical.feeding.fullTime}
+                      Part-time - <br /> {program.physical.feeding.partTime}{" "}
+                    </span>{" "}
+                    <span className="font-semibold text-emerald-700 ">
+                      {" "}
+                      Full-time - <br /> {program.physical.feeding.fullTime}
                     </span>
                   </li>
                 )}
@@ -201,7 +206,6 @@ export default  function PricingPage({ slug }) {
             </div>
           )}
 
-          
           {/* Murõja’ah has no boarding block */}
           {/* {mode === "boarding" && isMurajaah && (
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-emerald-100">
@@ -215,7 +219,7 @@ export default  function PricingPage({ slug }) {
 
         <div className="mt-8">
           <a
-            href="https://tally.so/r/nr4X8N" 
+            href="https://tally.so/r/nr4X8N"
             className="inline-block bg-emerald-600 text-white px-5 py-3 rounded-xl hover:bg-emerald-700"
           >
             Enroll Now

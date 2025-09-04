@@ -1,12 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { eventss } from "@/data/events";
 import H2 from "@/components/H2";
-import H3 from "@/components/H3";
 import Description from "@/components/Description";
 import { Clock } from "lucide-react";
 
