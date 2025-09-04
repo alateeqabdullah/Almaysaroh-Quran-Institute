@@ -1,10 +1,11 @@
-
 // app/programs/[slug]/page.tsx
 "use client";
 
-import { useParams } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 import { programs } from "@/data/programs";
-// import { Button } from "@/components/ui/button";
+import Description from "@/components/Description";
+import Link from "next/link";
+import { ArrowBigLeft } from "lucide-react";
 
 export default function ProgramDetailsPage() {
   const { slug } = useParams();
@@ -13,18 +14,23 @@ export default function ProgramDetailsPage() {
   const program = programs.find((p) => p.slug === slug);
 
   if (!program) {
-    return <div className="p-6 text-center text-red-500">Program not found</div>;
+    return notFound()
+     
   }
 
   return (
     <div className="max-w-4xl mx-auto px-16 pb-16 ">
-      <h1 className="text-3xl font-bold text-emerald-700 mb-4">{program.name}</h1>
+      <h1 className="text-3xl font-bold text-emerald-700 mb-4">
+        {program.name}
+      </h1>
       <p className="text-gray-700 mb-6">{program.description}</p>
 
       {/* Outline */}
       {program.outline && (
         <div className="mb-6">
-          <h2 className="text-xl font-semibold mb-2 text-emerald-600">Outline</h2>
+          <h2 className="text-xl font-semibold mb-2 text-emerald-600">
+            Outline
+          </h2>
           <ul className="list-disc list-inside text-gray-700 space-y-1">
             {program.outline.map((item, idx) => (
               <li key={idx}>{item}</li>
@@ -36,7 +42,9 @@ export default function ProgramDetailsPage() {
       {/* Requirements */}
       {program.requirements && (
         <div className="mb-6">
-          <h2 className="text-xl font-semibold mb-2 text-emerald-600">Requirements</h2>
+          <h2 className="text-xl font-semibold mb-2 text-emerald-600">
+            Requirements
+          </h2>
           <ul className="list-disc list-inside text-gray-700 space-y-1">
             {program.requirements.map((req, idx) => (
               <li key={idx}>{req}</li>
@@ -44,6 +52,14 @@ export default function ProgramDetailsPage() {
           </ul>
         </div>
       )}
+      <Description className=" mt-12  ">
+        <Link
+          href={"/programs"}
+          className=" px-12 py-4 flex text-green-800 gap-3   "
+        >
+          <ArrowBigLeft /> <span className="hover:border-b ">back to Programs</span>
+        </Link>
+      </Description>
 
       {/* Pricing Options
       <div className="mt-8 space-y-4">
@@ -75,7 +91,7 @@ export default function ProgramDetailsPage() {
             Physical (Boarding)
           </Button>
         </div>
-      </div> */}
+      </div>  */}
     </div>
   );
 }

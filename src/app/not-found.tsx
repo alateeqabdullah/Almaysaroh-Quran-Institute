@@ -34,7 +34,7 @@ export default function NotFound() {
 
         {/* Buttons */}
         <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <Button asChild className="rounded-2xl px-6 py-3">
+          <Button asChild className="rounded-2xl text-surface px-6 py-3">
             <Link href="/">🏠 Back to Home</Link>
           </Button>
           <Button asChild variant="outline" className="rounded-2xl px-6 py-3">

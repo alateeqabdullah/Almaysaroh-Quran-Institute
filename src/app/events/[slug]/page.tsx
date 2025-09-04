@@ -5,7 +5,6 @@ import { eventss } from "@/data/events";
 import Span from "@/components/Span";
 import Link from "next/link";
 import NotFound from "@/app/not-found";
-import H3 from "@/components/H3";
 import H2 from "@/components/H2";
 import Description from "@/components/Description";
 

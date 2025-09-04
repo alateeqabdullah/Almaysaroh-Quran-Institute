@@ -5,13 +5,14 @@ import { motion } from "framer-motion";
 import H2 from "./H2";
 import Description from "./Description";
 import { events } from "@/data/events";
+import Link from "next/link";
 
 export default function Events() {
   return (
     <section className="py-20 bg-yellow-600 ">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <H2 className="text-surface ">Upcoming Events</H2>
-        <Description className=" text-gray-700 mb-12 ">
+        <Description className=" text-green-900 mb-12 ">
           Join our upcoming programs and events designed to help students
           advance in their Qur’an learning journey.
         </Description>
@@ -36,6 +37,11 @@ export default function Events() {
             </motion.div>
           ))}
         </div>
+        <Description className=" mt-12  ">
+          <Link href={"/events"} className="  bg-surface px-12 py-4 rounded text-green-800 hover:bg-green-100 ">
+            See More Events
+          </Link>
+        </Description>
       </div>
     </section>
   );
