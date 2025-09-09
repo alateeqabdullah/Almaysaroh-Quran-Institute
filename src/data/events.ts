@@ -82,7 +82,9 @@ export const eventss: Eventss[] = [
         "Each session: 30mins - 1 hour",
         "Weekly practice tasks with feedback",
       ],
-      fees: "Affordable, with Paystack, bank transfer or WhatsApp arrangement",
+      fees: "#20,000 for the 4months - Can be paid twice",
+
+      // "Affordable, with Paystack, bank transfer or WhatsApp arrangement",
     },
     availability: true,
   },

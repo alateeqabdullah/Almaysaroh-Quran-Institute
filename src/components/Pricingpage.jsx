@@ -219,7 +219,7 @@ export default function PricingPage({ slug }) {
 
         <div className="mt-8">
           <a
-            href="https://tally.so/r/nr4X8N"
+            href="https://tally.so/r/wba7j7"
             className="inline-block bg-emerald-600 text-white px-5 py-3 rounded-xl hover:bg-emerald-700"
           >
             Enroll Now

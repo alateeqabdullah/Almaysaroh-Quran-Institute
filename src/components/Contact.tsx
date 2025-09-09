@@ -59,18 +59,18 @@ export default function ContactSection() {
               <Phone size={28} />
             </div>
             <h3 className="text-lg font-semibold text-green-800 mb-2">Phone</h3>
-            <p className="text-gray-900 text-center">+234 703 117 0308</p>
+            <p className="text-gray-900 text-center">+2348185300293</p>
           </motion.div>
         </div>
 
         {/* Optional Map */}
-        <div className="mt-12">
+        <div className="mt-12  max-w-7xl mx-auto">
           {/* Google Maps Embed */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="w-full max-w-5xl"
+            className="w-full "
           >
             <h2 className="text-2xl font-semibold text-emerald-700 text-center mb-6">
               Visit Us
