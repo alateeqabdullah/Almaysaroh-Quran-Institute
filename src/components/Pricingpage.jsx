@@ -218,12 +218,12 @@ export default function PricingPage({ slug }) {
         </div>
 
         <div className="mt-8">
-          <a
+          <Link
             href="https://tally.so/r/wba7j7"
             className="inline-block bg-emerald-600 text-white px-5 py-3 rounded-xl hover:bg-emerald-700"
           >
             Enroll Now
-          </a>
+          </Link>
         </div>
       </div>
     </section>
