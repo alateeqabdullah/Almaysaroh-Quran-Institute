@@ -28,7 +28,8 @@ export default function Navbar() {
           href="/"
           className=" text-xl md:text-2xl lg:text-3xl font-bold text-primary "
         >
-      <Image src={"/images/logo1.png"} alt="logo" width={100} height={100} className=" bg-green-800 " ></Image>
+          {/* <Image src={"/images/logo1.png"} alt="logo" width={100} height={100} className=" bg-green-800 " ></Image> */}
+          Almaysaroh
         </Link>
 
         {/* Desktop Menu */}
