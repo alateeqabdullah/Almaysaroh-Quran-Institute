@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import EnrollButton from "./EnrollButton";
-import Image from "next/image";
 
 const links = [
   { href: "/", label: "Home" },
