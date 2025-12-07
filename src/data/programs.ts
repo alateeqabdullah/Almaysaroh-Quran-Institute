@@ -76,8 +76,8 @@ export const programs: Program[] = [
       note: "Flexible — choose number of days per week and month, and class duration (30, 45, or 60 minutes). Pricing adjusts accordingly.",
     },
     physical: {
-      partTimeDay: "₦3,000",
-      fullTimeDay: "₦5,000",
+      partTimeDay: "₦5,000",
+      fullTimeDay: "₦10,000",
       partTimeBoarding: "₦10,000",
       fullTimeBoarding: "₦20,000",
       partTimeDays: " (Weekend: Sat–Sun, 9am–4pm)",
@@ -112,8 +112,8 @@ export const programs: Program[] = [
       note: "Flexible — pay per duration and days selected.",
     },
     physical: {
-      partTimeDay: "₦3,000",
-      fullTimeDay: "₦5,000",
+      partTimeDay: "₦5,000",
+      fullTimeDay: "₦10,000",
       partTimeBoarding: "₦10,000",
       fullTimeBoarding: "₦20,000",
       partTimeDays: " (Weekend: Sat–Sun, 9am–4pm)",
@@ -147,8 +147,8 @@ export const programs: Program[] = [
       note: "Flexible schedule — per day/week with accountability system.",
     },
     physical: {
-      partTimeDay: "₦3,000",
-      fullTimeDay: "₦5,000",
+      partTimeDay: "₦5,000",
+      fullTimeDay: "₦10,000",
       partTimeBoarding: "₦10,000",
       fullTimeBoarding: "₦20,000",
       partTimeDays: " (Weekend: Sat–Sun, 9am–4pm)",
