@@ -159,6 +159,9 @@ export default function PricingPage({ slug }) {
                   </li>
                 )}
               </ul>
+                <p className=" items-center text-sm font-semibold mt-6  text-gray-500 ">
+                kindly note that these are group classes
+              </p>
             </div>
           )}
 
@@ -203,6 +206,9 @@ export default function PricingPage({ slug }) {
                   </li>
                 )}
               </ul>
+                <p className=" items-center text-sm font-semibold mt-6  text-gray-500 ">
+                kindly note that these are group classes
+              </p>
             </div>
           )}
 
